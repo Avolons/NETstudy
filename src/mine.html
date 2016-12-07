@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>琇雅-功能中心</title>
+		<link rel="stylesheet" type="text/css" href="modules/css/mine.scss" />
+	</head>
+	<body>
+
+      <link rel="import" href="modules/html/header/header.html?__inline">
+
+    <article class="person-content clear">
+        <!-- 左侧列表部分 -->
+        <section class="person-left">
+            <figure>
+              <img src={{personData.imgsrc}} alt="arcter" />
+              <h5 class="size-14 overflow_pre">{{personData.name}}</h5>
+              <span class="size-12">已学时长:{{personData.studyTime}}小时</span>
+              <button type="button" class="size-12">更换头像</button>
+            </figure>
+            <ul>
+              <li class="select"><a href="#"><i class="iconfont" >&#xe61a;</i>我的云课堂</a></li>
+              <li><a href="#"><i class="iconfont">&#xe618;</i>我的证书</a></li>
+              <li><a href="#"><i class="iconfont">&#xe616;</i>我的作品</a></li>
+              <li class="myask"><a href="#"><i class="iconfont">&#xe615;</i>我的提问</a></li>
+              <li><a href="#"><i class="iconfont">&#xe60d;</i>我的消息</a></li>
+              <li v-on:click="toggleShow()" class="mypurch"><i class="iconfont">&#xe614;</i>我的交易<span>∧</span>
+              </li>
+               <ul id="functions">
+              		  <li class="select"><a href="#">订购的教材</a></li>
+		              <li><a href="#">购买的课程</a></li>
+		              <li><a href="#">激活的学习卡</a></li>
+              	</ul>
+              <li class="select persondata"><a href="#"><i class="iconfont">&#xe617;</i>个人详情</a></li>
+              <li ><a href="#"><i class="iconfont">&#xe613;</i>修改密码</a></li>
+            </ul>
+        </section>
+        <!-- 右侧主体内容展现部分 -->
+        <section class="person-right">
+             <!-- <link rel="import" href="modules/html/person_password/person_password.html?__inline"> -->
+             <!-- <link rel="import" href="modules/html/person_editor/person_editor.html?__inline"> -->
+             <link rel="import" href="modules/html/person_msg/person_msg.html?__inline">
+             <!-- <link rel="import" href="modules/html/person_myworks/person_myworks.html?__inline"> -->
+             <!-- <link rel="import" href="modules/html/person_queinf/person_queinf.html?__inline"> -->
+             <!-- <link rel="import" href="modules/html/person_question/person_question.html?__inline"> -->
+             <!-- <link rel="import" href="modules/html/person_last/person_last.html?__inline"> -->
+             <!-- <link rel="import" href="modules/html/person_cer/person_cer.html?__inline"> -->
+             <!-- <link rel="import" href="modules/html/person_card/person_card.html?__inline"> -->
+             <!-- <link rel="import" href="modules/html/person_course/person_course.html?__inline"> -->
+             <!-- <link rel="import" href="modules/html/person_cloud/person_cloud.html?__inline"> -->
+             <!-- <link rel="import" href="modules/html/person_cardinf/person_cardinf.html?__inline"> -->
+             <!-- <link rel="import" href="modules/html/person_message/person_message.html?__inline"> -->
+             <!-- <link rel="import" href="modules/html/person_messageinf/person_messageinf.html?__inline"> -->
+         	 <!-- <link rel="import" href="modules/html/person_bookinf/person_bookinf.html?__inline"> -->
+         	 <!-- <link rel="import" href="modules/html/person_book/person_book.html?__inline"> -->
+        </section>
+    </article>
+
+      <link rel="import" href="modules/html/footer/footer.html?__inline">
+
+    <script src="lib/js/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/js/vue/dist/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/js/distpicker/dist/distpicker.data.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/js/distpicker/dist/distpicker.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="modules/app/mine.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

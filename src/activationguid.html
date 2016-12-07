@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="modules/css/activationguid.scss" />
+		<link rel="stylesheet" type="text/css" href="lib/js/jquery.caroursel.js/css/carousel.css" />
+	</head>
+
+	<body>
+		<link rel="import" href="modules/html/header/header.html?__inline">
+		<div class="outer">
+			<article class="clear">
+			<section>
+				<div class="caroursel poster-main" data-setting='{
+			        "width":1150,
+			        "height":300,
+			        "posterWidth":715,
+			        "posterHeight":300,
+			        "scale":0.8,
+			        "dealy":"2000",
+			        "algin":"middle"
+			    }'>
+					<ul class="poster-list">
+						<li class="poster-item"><img src="img/avat/avat_one.png" width="100%" height="100%"></li>
+						<li class="poster-item"><img src="img/avat/avat_two.png" width="100%" height="100%"></li>
+						<li class="poster-item"><img src="img/avat/avat_three.png" width="100%" height="100%"></li>
+					</ul>
+
+					<div class="poster-btn poster-prev-btn"></div>
+					<div class="poster-btn poster-next-btn"></div>
+
+				</div>
+			</section>
+			<div>
+				<input type="text" placeholder="请输入学习卡密" />
+				<button type="button">激活学习卡</button>
+			</div>
+		</article>
+		
+		</div>
+		
+		<link rel="import" href="modules/html/footer/footer.html?__inline">
+		<script src="lib/js/jquery/dist/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/js/jquery.caroursel.js/js/jquery.carousel.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			Caroursel.init($('.caroursel'));
+		</script>
+	</body>
+
+</html>

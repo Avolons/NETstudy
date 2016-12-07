@@ -1,0 +1,33 @@
+<div class="person_cloud">
+	<h1>我的云课堂
+		<i class="iconfont">&#xe604;</i>
+		<input type="text" name="" id="" value="" placeholder="搜索你的课程"/>
+	</h1>
+	<ul class="type-check">
+		<li>全部</li>
+		<li>未开始</li>
+		<li>学习中</li>
+		<li>已完成</li>
+	</ul>
+	<ul class="cloud-list">
+		<li v-for="ite in cloudlist">
+			<h5>
+				<i class="iconfont">&#xe60c;</i>
+				{{ite.time}}
+			</h5>
+			<ul class="clear">
+				<!--绑定函数courseClick,将数据对象整体传入-->
+				<li v-for="item in ite.children" >
+					<figure>
+						<img src={{item.imgsrc}} alt="course" />
+						<h5 class="overflow_pre">{{item.title}}</h5>
+						<ul>
+							<!-- <li>{{item.studypeople}}人学习</li> -->
+							<li>{{item.courseNumber}}章节</li>
+						</ul>
+					</figure>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>

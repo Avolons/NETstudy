@@ -1,0 +1,90 @@
+.person_course{
+    width: 100%;
+    >h1{
+        height: 50px;
+        line-height: 50px;
+        box-sizing: border-box;
+        padding-left: 40px;
+        color: #313131;
+        font-size: 17px;
+        padding-right: 35px;
+        background-color: #FFFFFF;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    >.cloud-list{
+        width: 100%;
+        >li{
+            background-color: #FFFFFF;
+            margin-bottom: 5px;
+            >h5{
+                border-bottom: 1px solid #f2f1f1;
+                box-sizing: border-box;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 40px;
+                font-weight: 400;
+                font-size: 12px;
+            }
+            >ul{
+                margin-top: 28px;
+                padding-left: 40px;
+                box-sizing: border-box;
+                >li {
+                width: 250px;
+                display: block;
+                float: left;
+                margin-right: 20px;
+                transition: all 0.2s ease-in;
+                cursor: pointer;
+                margin-bottom: 50px;
+                &:hover{
+                   transform: translateY(-5px);
+                   box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.3);
+                }
+                >figure {
+                    margin: 0;
+                    position: relative;
+                    >aside{
+                    	position: absolute;
+                    	height: 25px;
+                    	width: 50px;
+                    	background-color: #0b60a2;
+                    	font-size: 12px;
+                    	color: #FFFFFF;
+                    	top: 0;
+                    	left: 20px;
+                    	text-align: center;
+                    	line-height: 25px;
+                    }
+                    >img {
+                        width: 250px;
+                        height: 150px;
+                        box-sizing: border-box;
+                        border: 1px solid #c3c3c3;
+                    }
+                    >h5 {
+                        color: #414141;
+                        font-size: 14px;
+                        height: 40px;
+                        line-height: 40px;
+                        box-sizing: border-box;
+                        padding-left: 5px;
+                    }
+                    >ul {
+                        box-sizing: border-box;
+                        height: 20px;
+                        padding-left: 5px;
+                        >li {
+                            float: left;
+                            width: 33%;
+                            color: #6f6f6f;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+}

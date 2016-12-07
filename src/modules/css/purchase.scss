@@ -1,0 +1,125 @@
+@import "./config";
+body{
+   background-color: #f6f6f6;
+
+}
+article{
+	width: 1200px;
+	margin: 40px auto 130px;
+	background-color: #FFFFFF;
+	height: 580px;
+	padding-top: 75px;
+	box-sizing: border-box;
+	>p{
+      border-top: 3px solid $main_color;
+		margin: 0 auto;
+		height: 13px;
+		width: 1040px;
+		margin-bottom: 40px;
+	}
+	>.outer{
+		width: 700px;
+		margin: 0 auto;
+		>.top{
+			height: 70px;
+			margin-bottom: 45px;
+			>img{
+				float: left;
+				align-content: center;
+				margin-top: 10px;
+				margin-right: 20px;
+			}
+			>h2{
+				width: 370px;
+				color: #2d2d2d;
+				font-size: 26px;
+				text-align: justify;
+				float: left;
+				line-height: 45px;
+				>p{
+					font-weight: 400;
+					color: #4c4c4c;
+					font-size: 18px;
+					line-height: 30px;
+				}
+			}
+			>h3{
+				float: right;
+				text-align: right;
+				color: #4c4c4c;
+				font-size: 18px;
+				font-weight: 400;
+				margin-top: 51px;
+				>span{
+					color: #de2424;
+				}
+			}
+		}
+		>h4{
+			color: #414141;
+			font-size: 20px;
+			font-weight: 400;
+			margin-bottom: 25px;
+		}
+		>ul{
+			>li{
+				margin-right: 30px;
+				display: inline-block;
+				height: 40px;
+				width: 260px;
+				>span{
+					display: inline-block;
+					height: 15px;
+					width: 15px;
+					border-radius: 50%;
+					box-sizing: border-box;
+					position: relative;
+					border: 2px solid #8e8e8e;
+					margin-bottom: 0px;
+					margin-right: 10px;
+					cursor: pointer;
+				}
+				>.select{
+					border-color: $main_color;
+					&:after{
+						display: block;
+						content: "";
+						width: 5px;
+						height: 5px;
+						top: 3px;
+						left: 3px;
+						border-radius: 50%;
+						position: absolute;
+						background-color: $main_color;
+					}
+				}
+				>p{
+					width: 225px;
+					display: inline-block;
+					box-sizing: border-box;
+					border: 1px solid #8e8e8e;
+					padding: 3px 0;
+					line-height: 33px;
+					>img{
+						margin-left: 15px;
+						float: left;
+						display: block;
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+		>button{
+			width: 73px;
+			height: 37px;
+			text-align: center;
+			line-height: 37px;
+			color: #FFFFFF;
+			font-size: 14px;
+			border: none;
+			background-color: $main_color;
+			margin-top: 40px;
+			cursor: pointer;
+		}
+	}
+}

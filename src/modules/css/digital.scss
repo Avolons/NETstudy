@@ -1,0 +1,91 @@
+@import "./config";
+body{
+  background-image: url("./../img/common/content-bc.png");
+}
+article{
+    width: 1200px;
+    margin: 50px auto;
+    padding: 10px 45px 60px 45px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    >h1{
+        font-size: 18px;
+        color: #191818;
+        text-indent: 20px;
+        height: 60px;
+        line-height: 60px;
+    }
+    >ul{
+        border-top: 1px solid #E0E0E0;
+        border-left: 1px solid #e0e0e0;
+        background-color: #FFFFFF;
+        box-sizing: border-box;
+        >li{
+            border-bottom: 1px solid #E0E0E0;
+            border-right: 1px solid #E0E0E0;
+            box-sizing: border-box;
+            float: left;
+            width: 50%;
+            height: 50px;
+            line-height: 50px;
+            color: #252525;
+            >h2{
+                width: 120px;
+                font-weight: 400;
+                font-size: 14px;
+                text-align: center;
+                box-sizing: border-box;
+                background-color: #EEEEEE;
+                border-right: 1px solid #E0E0E0;
+                float: left;
+            }
+            >span{
+                display: block;
+                height: 100%;
+                float: left;
+                width: calc(100% - 120px);
+                box-sizing: border-box;
+                padding: 0 15px;
+            }
+        }
+        >.special{
+            height: 100px;
+            width: 100%;
+            overflow: hidden;
+            line-height: 25px;
+            >h2{
+                height: 100%;
+                line-height: 100px;
+            }
+            >span{
+                padding: 10px 15px;
+                overflow: hidden;
+            }
+        }
+
+    }
+    >div{
+         width: 100%;
+         margin-top: 20px;
+         box-sizing: 1px solid #E0E0E0;
+         border: 1px solid #E0E0E0;
+         box-sizing: border-box;
+        >h2{
+            height: 50px;
+            line-height: 50px;
+            text-indent: 20px;
+            box-sizing: border-box;
+            background-color: #EEEEEE;
+            border-bottom: 1px solid #E0E0E0;
+        }
+        >span{
+            display: block;
+            min-height:300px ;
+            padding:10px;
+          
+            >pre{
+              white-space: normal;
+            }
+        }
+    }
+}

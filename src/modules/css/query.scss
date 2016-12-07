@@ -1,0 +1,161 @@
+@import "./config";
+html,body{
+  height: 100%;
+}
+body{
+  background-color: #f6f6f6;
+}
+article{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px ;
+    min-height: calc(100% - 98px - 291px);
+    >nav{
+        height: 55px;
+        padding: 15px;
+        border: 1px solid #e7e7e7;
+        box-sizing: border-box;
+        background-color: #e9e8e8;
+        >span{
+            float: left;
+            height: 100%;
+            color: #505050;
+            font-size: 14px;
+            line-height: 25px;
+            margin-right: 5px;
+        }
+        >input{
+            float: left;
+            height: 100%;
+            background-color: #FFFFFF;
+            margin-right: 20px;
+            border: none;
+        }
+        >img{
+            float: left;
+            height: 40px;
+            display: block;
+            margin-top: -8.5px;
+        }
+        >button{
+            float: right;
+            height: 100%;
+            background-color: $main_color;
+            display: block;
+            border: none;
+            cursor: pointer;
+            padding: 0 23px;
+            font-size: 14px;
+            color: #FFFFFF;
+            line-height: 22px;
+        }
+    }
+    >ul{
+        margin-top: 15px;
+        >section{
+             height: 55px;
+            padding: 15px;
+            border: 1px solid #e7e7e7;
+            box-sizing: border-box;
+            background-color: #e9e8e8;
+            >span{
+            color: #505050;
+            font-size: 14px;
+            text-align: center;
+            float: left;
+            display: block;
+            height: 100%;
+            &:after{
+                content: '';
+                display: block;
+                width: 1px;
+                height: 100%;
+                float: right;
+                background-color: #d0cece;
+            }
+            }
+            >.width-1{
+                width: 80px;
+                text-align: left;
+            }
+            >.width-2{
+                width: 190px;
+            }
+            >.width-3{
+                width: 228px;
+            }
+            >.width-4{
+                width: 215px;
+            }
+            >.width-5{
+                width: 180px;
+            }
+            >.width-6{
+                width: 160px;
+            }
+            >.width-7{
+                width: 115px;
+                &:after{
+                    display: none;
+                }
+            }
+        }
+        >li{
+            background-color: #FFFFFF;
+            display: block;
+            width: 100%;
+            height: 55px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #c8c8c8;
+            >span{
+                color: #505050;
+                font-size: 14px;
+                text-align: center;
+                float: left;
+                display: block;
+                height: 100%;
+                line-height: 24px;
+            }
+            >.width-1{
+                width: 80px;
+                text-align: left;
+                padding-left: 10px;
+                box-sizing: border-box;
+            }
+            >.width-2{
+                width: 190px;
+            }
+            >.width-3{
+                width: 228px;
+            }
+            >.width-4{
+                width: 215px;
+            }
+            >.width-5{
+                width: 180px;
+            }
+            >.width-6{
+                width: 160px;
+            }
+            >.width-7{
+                width: 115px;
+                &:after{
+                    display: none;
+                }
+                >button{
+                    border: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    color: #860404;
+                    background-color: transparent;
+                }
+            }
+        }
+
+    }
+    >section{
+        text-align: center;
+        margin: 50px 0;
+    }
+}

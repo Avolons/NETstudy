@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 10px;//width:750px
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 10px;//width:750px
+	padding: 30px;
+	padding-top: 0;
+	background-color: #FFFFFF;
+	>.lookfor{
+		background-color: #EEEEEE;
+		margin-bottom: 10px;
+		height: 8rem;
+		box-sizing: border-box;
+		padding: 1.5rem 5px;
+		>input{
+			box-sizing: border-box;
+			height: 3rem;
+			line-height: 3rem;
+			width: 80%;
+			float: left;
+			display: block;
+			font-size: 2rem;
+			border: 2px solid #8C0202;
+			padding-left: 5px;
+			outline: none;
+		}
+		>button{
+			float: left;
+			height: 3rem;
+			display: block;
+			width: 20%;
+			text-align: center;
+			line-height: 3rem;
+			font-size: 2.5rem;
+			color: #FFFFFF;
+			background-color: #8C0202;
+			border: none;
+		}
+		>p {
+			float: left;
+			margin-top: 0.5rem;
+			line-height: 1.5rem;
+			font-size: 1rem;
+			text-indent: 5px;
+		}
+	}
+	>h1{
+		height: 6rem;
+		padding-left: 1.5rem;
+		color: #575454;
+		font-size: 3rem;
+		background-color: #EEEEEE;
+		border-bottom: 2px solid #8c0202;
+		line-height: 6rem;
+	}
+	>ul{
+		margin-top: 1.5rem;
+		border: 1px solid #cecece;
+		>li{
+			display: block;
+			border-bottom: 1px solid #cecece;
+			height: 5rem;
+			line-height: 5rem;
+			font-size: 2.4rem;
+			&:after{
+				display: block;
+				content: "";
+				clear: both;
+			}
+			>h2{
+				font-size: 2.4rem;
+				font-weight: 400;
+				height: 100%;
+				box-sizing: border-box;
+				width: 30%;
+				float: left;
+				background-color: #eeeeee;
+				text-align: center;
+			}
+			>p{
+				font-size: 2.4rem;
+				width: 70%;
+				float: left;
+				text-indent: 2rem;
+			}
+		}
+		>.intr{
+			height: 300px;
+			border-bottom: 1px solid #cecece;
+			>h2{
+				font-size: 2.4rem;
+				font-weight: 400;
+				margin: 0 auto;
+				text-align: center;
+				height: 5rem;
+				line-height: 5rem;
+			}
+			>img{
+				display: block;
+				max-height: calc(100% - 5rem);
+				max-width: 100%;
+				margin: 0 auto;
+			}
+		}
+		>.worksintr{
+			height: auto;
+			>h2{
+				width: 100%;
+				float: none;
+				text-align: center;
+			}
+			>p{
+				float: none;
+				text-indent: 0;
+				width: 100%;
+				box-sizing: border-box;
+				padding: 0 10px;
+				font-size: 1.8rem;
+				line-height: 2.5rem;
+				font-weight: 400;
+			}
+		}
+		>.worksimg{
+			height: auto;
+			>h2{
+				font-size: 2.4rem;
+				font-weight: 400;
+				margin: 0 auto;
+				text-align: center;
+				height: 5rem;
+				line-height: 5rem;
+				background-color: #eeeeee;
+			}
+			>img{
+				display: block;
+				margin: 0 auto;
+				max-width: 100%;
+				max-height: calc(100% - 5rem);
+			}
+		}
+	}
+}

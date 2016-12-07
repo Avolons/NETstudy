@@ -1,0 +1,146 @@
+.person_cloud {
+    .width-1 {
+        width: 260px;
+    }
+    .width-2 {
+        width: 270px;
+    }
+    .width-3 {
+        width: 122.5px;
+    }
+    .width-4 {
+        width: 122.5px;
+    }
+    .width-5 {
+        width: 85px;
+    }
+    width: 100%;
+    >h1 {
+        height: 50px;
+        line-height: 50px;
+        box-sizing: border-box;
+        padding-left: 40px;
+        color: #313131;
+        font-size: 17px;
+        padding-right: 35px;
+        background-color: #FFFFFF;
+        position: relative;
+        >input {
+            height: 36px;
+            box-sizing: border-box;
+            float: right;
+            font-size: 14px;
+            color: #717171;
+            padding-left: 40px;
+            outline: none;
+            border: 1px solid #e1e1e1;
+            width: 275px;
+            background-color: #f8f8f8;
+            margin-top: 7px;
+        }
+        >i {
+            font-weight: 400;
+            font-size: 20px;
+            position: absolute;
+            right: 275px;
+            cursor: pointer;
+        }
+    }
+    >.type-check {
+        box-sizing: border-box;
+        padding-left: 40px;
+        height: 50px;
+        background-color: #FFFFFF;
+        margin-top: 10px;
+        >li {
+            float: left;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 13px;
+            color: #3f3f3f;
+        }
+        >.width-1 {
+            text-align: left;
+        }
+    }
+    >.cloud-list {
+        width: 100%;
+        >li {
+            background-color: #FFFFFF;
+            margin-top: 5px;
+            padding: 20px 0 20px 40px;
+            >h5 {
+                border-bottom: 1px solid #f2f1f1;
+                box-sizing: border-box;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 40px;
+                font-weight: 400;
+                font-size: 12px;
+            }
+            >ul {
+                box-sizing: border-box;
+                >li {
+                    height: 66px;
+                    line-height: 66px;
+                    color: #3f3f3f;
+                    font-size: 12px;
+                    display: block;
+                    float: left;
+                }
+                >.width-1{
+                    >img{
+                        width:110px;
+                        height: 66px;
+                        display: block;
+                        float: left;
+                    }
+                    >p{
+                        margin-top: 10px;
+                        line-height: 25px;
+                        margin-left: 15px;
+                        float: left;
+                        width: calc(100% - 125px);
+                    }
+                    >h3{
+                        line-height:25px;
+                        font-weight: 400;
+                        margin-left: 15px;
+                        float: left;
+                    }
+                }
+                >.width-2{
+                    height: 50px;
+                    margin-top: 10px;
+                    line-height: 25px;
+                    overflow: hidden;
+                    font-weight: 700;
+                }
+                >.width-3{
+                	box-sizing:border-box ;
+                    text-align: center;
+                     padding: 0 10px;
+                     padding-top: 15px;
+                     line-height: 20px;
+                }
+                >.width-4{
+                	box-sizing:border-box ;
+                    text-align: center;
+                    padding: 0 10px;
+                    padding-top: 15px;
+                    line-height: 20px;
+                }
+                >.width-5{
+                    text-align: center;
+                    >button{
+                        color: #0b60a2;
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

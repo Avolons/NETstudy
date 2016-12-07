@@ -1,0 +1,75 @@
+@import "./config";
+body {
+  background-color: #f6f6f6;
+}
+nav{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    padding-left: 10px;
+    >ul{
+        >li{
+        float: left;
+        color: #313131;
+        font-size: 16px;
+        cursor: pointer;
+        width: 93px;
+        height: 35px;
+        transition: all 0.2s ease-in;
+        text-align: center;
+        margin-top: 10px;
+        line-height: 35px;
+        margin-right: 50px;
+        &:hover{
+           color: #FFFFFF;
+          background-color: $main_color;
+        }
+      }
+      >.select{
+          color: #FFFFFF;
+          background-color: $main_color;
+      }
+    }
+}
+article{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    >ul{
+        background-color: #FFFFFF;
+        margin-bottom: 180px;
+        min-height: 300px;
+        >li{
+            cursor: pointer;
+            height: 70px;
+            border-bottom: 1px dashed #d4d4d4;
+            padding: 20px 40px 15px 20px;
+            box-sizing: border-box;
+            &:hover{
+                background-color: #DADADA;
+                >a{
+                    >p{
+                        color: $main_color;
+                    }
+                }
+            }
+            >a{
+                >p{
+                    display: block;
+                    color: #1b1b1b;
+                    font-size: 12px;
+                }
+                >time{
+                    display: block;
+                    color: #878787;
+                    font-size: 12px;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

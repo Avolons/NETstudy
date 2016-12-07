@@ -1,0 +1,58 @@
+@import "./config";
+body{
+background-color: #f6f6f6;
+
+}
+.outer{
+	background-image: url(../img/avat/avat_bc.png);
+	background-position:top center;
+  background-repeat: no-repeat;
+  padding-top: 130px;
+	article{
+		margin: 130px auto;
+		margin-top: 0;
+	margin-bottom: 80px;
+	width: 1200px;
+	>section{
+		height: 350px;
+		background-color: #FFFFFF;
+		padding-top: 50px;
+	}
+	>div{
+		height: 140px;
+		background-color: #e9e8e8;
+		padding-top: 30px;
+		>input{
+			display: block;
+			height: 43px;
+			width: 950px;
+			margin: 27px auto;
+			background-color: #FFFFFF;
+			text-indent: 20px;
+			font-size: 14px;
+			margin-top: 0;
+			margin-bottom: 23px;
+		}
+		>button{
+			border: none;
+			width: 160px;
+			height: 45px;
+			line-height: 45px;
+			display: block;
+			margin: 0 auto;
+			color: #FFFFFF;
+			background-color: $main_color;
+			cursor: pointer;
+		}
+	}
+	.caroursel{
+		margin: 0 auto;
+		.poster-item{
+			box-sizing: border-box;
+			border: 10px solid #FFFFFF;
+			box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+		}
+	}
+}
+
+}

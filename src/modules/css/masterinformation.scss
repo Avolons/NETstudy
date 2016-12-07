@@ -1,0 +1,221 @@
+@import "./config";
+body {
+	background-color: #f6f6f6;
+	>div{
+		>.fixedheader{
+			position: fixed;
+			top: 50px;
+		}
+		>figure {
+			width: 100%; //	margin: 0 auto;
+			position: absolute;
+			box-sizing: border-box;
+			top: 140px;
+			margin: 0;
+			height: 200px;
+			>.inneritr {
+				width: 1200px;
+				margin: 0 auto;
+				height: 200px;
+				>img {
+					display: block;
+					height: 200px;
+					width: 200px;
+					border-radius: 50%;
+					box-sizing: border-box;
+					border: 2px solid #d5d5d5;
+					margin-bottom: 30px;
+				}
+				>.tec_change {
+					width: 195px;
+					height: 106px;
+					box-sizing: border-box;
+					border: 1px solid $main_color;
+					>h5 {
+						height: 50%;
+						text-indent: 40px;
+						border: 1px solid $main_color;
+						box-sizing: border-box;
+						text-align: center;
+						line-height: 52px;
+						color: #262626;
+						cursor: pointer;
+						transition: all 0.3s ease-in;
+						&:hover {
+							background-color: $main_color;
+							color: #ffffff;
+							&:after{
+								border-left-color: #ffffff;
+							}
+						}
+						&:after {
+							content: '';
+							display: block;
+							width: 0;
+							height: 0;
+							border: 6px solid transparent;
+							border-left-color: #262626;
+							float: right;
+							margin: 20px 45px 0 0;
+						}
+					}
+					>.select {
+						color: #ffffff;
+						background-color: $main_color;
+						&:after {
+							border-left-color: #ffffff;
+						}
+
+					}
+				}
+			}
+		}
+		>.fix-style {
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		>nav {
+			background-image: url(../img/master/master-hbc.png);
+			width: 100%;
+			height: 200px;
+			padding-top: 70px;
+			box-sizing: border-box;
+			position: relative;
+			z-index: -2;
+			>.tec_mes {
+				width: 1200px;
+				margin: 0 auto;
+				box-sizing: border-box;
+				padding-left: 240px;
+				>h1 {
+					font-size: 35px;
+					color: #000000;
+					margin-bottom: 10px;
+					font-weight: 700;
+				}
+				>h3 {
+					font-size: 14px;
+					color: #FFFFFF;
+					background-color: $main_color;
+					height: 30px;
+					width: 95px;
+					text-align: center;
+					line-height: 30px;
+					margin-bottom: 10px;
+				}
+				>p {
+					color: #000000;
+					font-size: 14px;
+					font-weight: 700;
+				}
+			}
+		}
+		>article {
+			min-height: 700px;
+			width: 1200px;
+			margin: 0 auto; //	padding-top: 265px;
+			>section {
+				&:after{
+					content: "";
+					display: block;
+					clear: both;
+				}
+				display: none;
+				margin-left: 240px;
+				width: 960px;
+				box-sizing: border-box;
+				min-height: 500px;
+				margin-top: 55px;
+				background-color: #ffffff;
+				padding: 15px 40px;
+				border: 1px solid #d4d4d4;
+				>h2 {
+					height: 40px;
+					box-sizing: border-box;
+					border-bottom: 1px solid $main_color;
+					margin-bottom: 30px;
+					>a {
+						line-height: 40px;
+						height: 40px;
+						display: block;
+						box-sizing: border-box;
+						color: $main_color;
+						font-size: 16px;
+						border-bottom: 3px solid $main_color;
+						text-align: center;
+						width: 90px;
+						text-decoration: none;
+					}
+				}
+			}
+			>.select {
+				display: block;
+			}
+			>.tec_cur {
+				>ul {
+					width: calc(100% + 30px);
+					height: 100%;
+					float: left;
+					&:after{
+						content: "";
+						display: block;
+						clear: both;
+					}
+					>li {
+						padding-bottom: 5px;
+						background-color: #ffffff;
+						border: 1px solid #e4e4e4;
+						float: left;
+						width: calc(100% / 3 - 31px);
+						margin-right: 30px;
+						margin-bottom: 10px;
+						box-sizing: border-box;
+						transition: all 0.3s ease-in;
+						cursor: pointer;
+						&:hover {
+							box-shadow: -2px 4px 7px 0 rgba(0,0,0,0.3);
+							background-color: #FFFFFF;
+						}
+						>figure {
+							margin: 0;
+							>img {
+								display: block;
+								height: 180px;
+								width: 100%;
+							}
+							>h5 {
+								margin-top: 3px;
+								font-size: 14px;
+								color: #4b4a4a;
+								font-weight: 400;
+								text-indent: 5px;
+								margin-bottom: 10px;
+							}
+							>ul {
+								margin-top: 3px;
+								text-indent: 5px;
+								&:after {
+									display: block;
+									content: "";
+									clear: both;
+								}
+								>li {
+									width: 50%;
+									float: left;
+									color: #504e4e;
+									font-size: 13px;
+								}
+								>li:nth-of-type(1) {
+									font-weight: 700;
+									font-size: 16px;
+									color: #bc1515;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

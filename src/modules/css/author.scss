@@ -1,0 +1,76 @@
+@import "./config";
+body{
+  background-color: #f6f6f6;
+}
+html,body{
+	height: 100%;
+}
+article{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 50px;
+    min-height: calc(100% - 308px);
+    box-sizing: border-box;
+    >.left{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        text-align: center;
+        >figure{
+            margin: 0;
+            height: 300px;
+            width: 230px;
+            box-sizing: border-box;
+            background-color: $main_color;
+            padding: 2px;
+            >img{
+                width: 100%;
+                display: block;
+                height: 245px;
+            }
+            >h2{
+                font-size: 14px;
+                color: #FFFFFF;
+                font-weight: 400;
+                line-height: 25px;
+            }
+        }
+        >img{
+            margin: 0 auto;
+            margin-top: 40px;
+            display: block;
+            width: 110px;
+            height: 110px;
+        }
+        >p{
+            color: #161716;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+    >.right{
+        float: right;
+        width: 930px;
+        >h1{
+            color: $main_color;
+            font-size: 22px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid $main_color;
+            &:after{
+                width: 10px;
+                height: 27px;
+                float: left;
+                display: block;
+                content: "";
+                background-color: $main_color;
+                margin-right: 10px;
+                margin-top: 3px;
+            }
+        }
+        >pre{
+          white-space: normal;
+        }
+    }
+}

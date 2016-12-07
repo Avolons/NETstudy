@@ -1,0 +1,28 @@
+{
+  "name": "lib",
+  "description": "jsrepository",
+  "main": "",
+  "keywords": [
+    "wzh"
+  ],
+  "authors": [
+    "wzh"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "vue": "^1.0.26",
+    "video.js": "^5.13.0",
+    "vjs-resolution-switcher": "videojs-resolution-switcher#^0.4.2",
+    "videojs-contrib-hls": "^3.5.3"
+  }
+}

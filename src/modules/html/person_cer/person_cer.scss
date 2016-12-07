@@ -1,0 +1,98 @@
+.person_cer {
+    width: 100%;
+    .width-1 {
+        width: 95px;
+    }
+    .width-2 {
+        width: 85px;
+    }
+    .width-3 {
+        width: 135px;
+    }
+    .width-4 {
+        width: 183px;
+    }
+    .width-5 {
+        width: 110px;
+    }
+    .width-6 {
+        width: 110px;
+    }
+    .width-7 {
+        width: 100px;
+        float: right;
+        border-right: none;
+    }
+    >h1 {
+        height: 50px;
+        line-height: 50px;
+        box-sizing: border-box;
+        padding-left: 40px;
+        color: #313131;
+        font-size: 17px;
+        padding-right: 35px;
+        background-color: #FFFFFF;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .inner {
+        min-height: 620px;
+        margin-top: 20px;
+        padding: 15px 40px 0;
+        background-color: #FFFFFF;
+        >.type-check {
+//          box-sizing: border-box;
+            height: 50px;
+            background-color: #FFFFFF;
+            border: 1px solid #d7d7d7;
+            >li {
+                float: left;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                font-size: 13px;
+                color: #424242;
+                box-sizing: border-box;
+                border-right: 1px solid #d7d7d7 ;
+            }
+            >.width-7 {
+
+                border-right: none;
+            }
+        }
+        >.cloud-list {
+            width: 100%;
+            >li {
+                background-color: #FFFFFF;
+                text-align: center;
+                border-left: 1px solid #d7d7d7;
+                border-right: 1px solid #d7d7d7 ;
+                >ul {
+//                  box-sizing: border-box;
+                    background-color: #FFFFFF;
+                    border-bottom: 1px solid #d7d7d7;
+                    >li {
+                        display: block;
+                        float: left;
+                        font-size: 12px;
+                        color: #5b5b5b;
+                        max-height: 80px;
+                        line-height: 30px;
+                        box-sizing: border-box;
+                        padding: 10px 0;
+                        overflow: hidden;
+                        >button {
+                            border: none;
+                            padding: 0 15px;
+                            background-color: transparent;
+                            cursor: pointer;
+                        }
+                    }
+                    .color {
+                        color: #0b60a2;
+                    }
+                }
+            }
+        }
+    }
+}

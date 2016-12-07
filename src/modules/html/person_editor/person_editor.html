@@ -1,0 +1,77 @@
+<div class="person-editor">
+	<h1>作品编辑</h1>
+	<div class="content">
+		<ul>
+			<li class="clear">
+				<h2><span>*</span>作品编号 :</h2>
+				<p>201609201992</p>
+			</li>
+			<li class="clear">
+				<h2><span>*</span>作品名称 :</h2>
+				<input type="text"  value="观音插件" />
+			</li>
+			<li>
+				<span>封面图片 :</span>
+				<div  >
+	                <a href="javascript:void(0);" >
+	                                                               选择文件
+	                    <input id="ImgFile" name="ImgFile" type="file" onchange="javascript:SetTable(this);" accept='image/gif,image/jpeg,image/png,image/bmp,image/jpg' />
+	                </a>
+                    <div  >
+	                    <div  id="ImgList">
+	                            <img src='../../../img/coursecenter/course-lizi.png'  />
+	                            <span  onclick='javascript:Delimg(this);'>删除图片</span>
+	                    </div>
+                    <span >（可以上传JPG/JPEG/PNG/GIF格式的图片）</span>
+                </div>
+            </div>
+			</li>
+			<li>
+				<span>创作灵感 :</span>
+				<textarea  ></textarea>
+			</li>
+			<li>
+				<span>雕刻方式 :</span>
+				<select  value="玉雕">
+					<option value="">玉雕</option>
+					<option value="">木雕</option>
+				</select>
+			</li>
+			<li>
+				<span>作品材质 :</span>
+				<ul class="clear">
+					<li><input type="checkbox"  /><label>和田玉</label></li>
+					<li><input type="checkbox"  /><label>桃木</label></li>
+					<li><input type="checkbox"  /><label>黄花梨木</label></li>
+					<li><input type="checkbox"  /><label>水晶</label></li>
+					<li><input type="checkbox"  /><label>翡翠</label></li>
+					<li><input type="checkbox"  /><label>紫檀木</label></li>
+					<li><input type="checkbox"  /><label>碧玉</label></li>
+					<li><input type="checkbox"  /><label>其他</label></li>
+					<li><input type="checkbox"  /><label>宝石</label></li>
+					<li><input type="checkbox"  /><label>其他</label></li>
+				</ul>
+			</li>
+			<li>
+				<span>作品题材 :</span>
+				<ul class="clear">
+					<li><input type="checkbox"  /><label>观音</label></li>
+					<li><input type="checkbox"  /><label>貔貅</label></li>
+					<li><input type="checkbox"  /><label>生肖</label></li>
+					<li><input type="checkbox"  /><label>关公</label></li>
+					<li><input type="checkbox"  /><label>名字</label></li>
+					<li><input type="checkbox"  /><label>动作</label></li>
+					<li><input type="checkbox"  /><label>装饰</label></li>
+					<li><input type="checkbox"  /><label>戒指</label></li>
+					<li><input type="checkbox"  /><label>耳钉</label></li>
+					<li><input type="checkbox"  /><label>磐石</label></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="outer">
+			<button type="button">返回</button>
+		<button type="button">下一步</button>
+		</div>
+		
+	</div>
+</div>

@@ -1,0 +1,162 @@
+.person-last{
+    width: 100%;
+    >h1{
+         height: 50px;
+         line-height: 50px;
+         color: #313131;
+         font-size: 17px;
+         background-color: #FFFFFF;
+         width: 100%;
+         padding-left: 37px;
+         box-sizing: border-box;
+         margin-bottom: 20px;
+    }
+    >.content{
+        padding: 20px 35px;
+        box-sizing: border-box;
+        background-color: #FFFFFF;
+        min-height: 743px;
+        >.top{
+            >button{
+                border: none;
+                background-color: #0b60a2;
+                color: #FFFFFF;
+                font-size: 14px;
+                width: 90px;
+                height: 35px;
+                line-height: 35px;
+                float: left;
+                margin-right: 20px;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+            >span{
+                font-size: 14px;
+                color: #0b60a2;
+                margin-top: 14px;
+                display: block;
+                float: left;
+            }
+        }
+        >ul{
+            margin-top: 40px;
+            >li{
+                box-sizing: border-box;
+                width: 780px;
+                border: 1px solid #0b60a2;
+                position: relative;
+                border-radius: 5px;
+                margin-bottom: 40px;
+                min-height: 50px;
+                >a{
+                    position: absolute;
+                    right: -40px;
+                    font-size: 14px;
+                    color: #202020;
+                    bottom: 0;
+                }
+                >p{
+                    >i{
+                        font-size:14px;
+                        &:hover{
+                        color: #0b60a2;
+                       }
+                    }
+                    position: absolute;
+                    cursor: pointer;
+                    left: 0;
+                    top: -20px;
+                    font-size: 14px;
+
+                }
+                >textarea{
+                    border: none;
+                    resize: none;
+                    height: 100%;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 5px;
+                    border-radius: 5px;
+                    outline-style: none;
+                    font-size: 14px;
+                    color: #4d4d4d;
+                }
+            }
+            >.imgeditor{
+                >input{
+                    position: absolute;
+                    opacity: 0;
+                    z-index: 2;
+                    right: 3px;
+                    bottom: 3px;
+                    cursor: pointer;
+                    width: 98px;
+                    height: 30px;
+                    box-sizing: border-box;
+                    display: block;
+                }
+                >button{
+                    position: absolute;
+                    z-index: 1;
+                    right: 3px;
+                    bottom: 3px;
+                    border: none;
+                    background-color: #0b60a2;
+                    color: #FFFFFF;
+                    border-radius: 5px;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 10px;
+                    cursor: pointer;
+                }
+                >img{
+                    float: left;
+                    max-width: 500px;
+                }
+            }
+            >.texteditor{
+                height: 80px;
+            }
+        }
+        >.outer{
+        	text-align: center;
+        	 >button{
+            font-size: 14px;
+            height: 35px;
+            width: 70px;
+            border: none;
+            line-height: 35px;
+            background-color: #0b60a2;
+            margin: 0 auto;
+            border: none;
+            color: #FFFFFF;
+            border-radius: 5px;
+         }
+        }
+        >p{
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #0b60a2;
+        }
+        >.passvalue{
+            margin-bottom: 20px;
+            >input{
+            margin-right: 5px;
+        }
+        >label{
+            margin-right: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        >textarea{
+            display: block;
+            resize: none;
+            margin-top: 10px;
+            width: 778px;
+            height: 50px;
+        }
+        }
+
+    }
+}

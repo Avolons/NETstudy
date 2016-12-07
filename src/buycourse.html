@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>琇雅-我要报名</title>
+	<link rel="stylesheet" type="text/css" href="modules/css/buycourse.scss" />
+	</head>
+	<body>
+		<link rel="import" href="modules/html/header/header.html?__inline">
+ 		<article>
+ 			<h2>仅报名课程</h2>
+ 			<figure>
+ 				<span></span>
+ 				<img src="img/information/information-img.png"/>
+ 				<p>
+ 					指尖上的传承之玉雕
+ 					<span>￥300</span>
+ 				</p>
+ 			</figure>
+ 			<h2>选择配套教材</h2>
+ 			<ul>
+ 				<div>
+ 					<span class="short"> 选择</span>
+ 					<span class="long">教材名称</span>
+ 					<span> 价格（元）</span>
+ 					<span> 状态</span>
+ 				</div>
+ 				<li>
+ 					<p class="short">
+ 						<span class="btn"></span>
+ 					</p>
+ 					<p class="overflow_pre long">优秀员工的10大心态</p>
+ 					<p>200</p>
+ 					<p>必选</p>
+ 				</li>
+ 				<li>
+ 					<p class="short">
+ 						<span class="btn"></span>
+ 					</p>
+ 					<p class="overflow_pre long">优秀员工的10大心态</p>
+ 					<p>200</p>
+ 					<p>必选</p>
+ 				</li>
+ 			</ul>
+ 			
+ 			<section class="clear">
+				<h2>请填写收货地址：</h2>
+				<aside>
+					<ul>
+						<li class="clear">
+							<h3>
+								<span>
+									*
+								</span>
+								收货人：
+							</h3>
+							<input type="text" placeholder="请输入收货人姓名" />
+						</li>
+						<li class="clear">
+							<h3>
+								<span>
+									*
+								</span>
+								联系方式：
+							</h3>
+							<input type="text" placeholder="请输入手机号码或者固定电话"  />
+						</li>
+						<li class="clear">
+							<h3>
+								<span>
+									*
+								</span>
+								收货地址：
+							</h3>
+							<input type="text" class="long" placeholder="请输入具体收货地址"/>
+						</li>
+						<li class="clear">
+							<h3>
+								<span>
+									*
+								</span>
+								邮编：
+							</h3>
+							<input type="text" placeholder="请输入6位数邮编" />
+						</li>
+						<li class="clear">
+							<h3>
+								备注：
+							</h3>
+							<textarea >
+								
+							</textarea>
+						</li>
+					</ul>
+				</aside>
+			</section>
+			<h3>
+ 				累计金额：
+ 				<span>
+ 					￥300元
+ 				</span>
+ 			</h3>
+ 			<div>
+ 				<button type="button" class="select">去支付</button>
+ 				<button type="button">返回</button>
+ 			</div>
+ 		</article>
+  		<link rel="import" href="modules/html/footer/footer.html?__inline">
+		<script src="lib/js/jquery/dist/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+  		<script type="text/javascript">
+  			$(".btn").click(function  () {
+  				$(this).toggleClass("select");
+  			})
+  		</script>
+	</body>
+</html>

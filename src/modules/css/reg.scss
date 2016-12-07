@@ -1,0 +1,129 @@
+@import "./config";
+body{
+  background-color: #f6f6f6;
+}
+header{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+    >span{
+        float: right;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+    >.logo{
+        float: left;
+        display: block;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        >img{
+            width: 70%;
+        }
+    }
+    >a{
+        float: right;
+        font-size: 14px;
+        color: #de2424;
+        margin-top: 40px;
+    }
+}
+footer{
+  padding-top: 30px;
+  >p{
+    text-align: center;
+    color: #545454;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+article{
+    background-color: #FFFFFF;
+    border: 1px solid #c9c9c9;
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 80px 340px 70px 0;
+    >h1{
+        font-weight: 400;
+        font-size: 26px;
+        color: $main_color;
+        position: absolute;
+        top: 40px;
+        left: 50px;
+    }
+    >ul{
+        width: 100%;
+        >li{
+            height: 40px;
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+            >input{
+            	font-size: 14px;
+                float: right;
+                width: 400px;
+                height: 100%;
+                display: block;
+                box-sizing: border-box;
+                padding-left: 10px;
+                outline-color: $main_color;
+            }
+            >#CodeForMobile{
+             width: 260px;
+            }
+            >button{
+                height: 45px;
+                box-sizing: border-box;
+                border: none;
+                background-color: $main_color;
+                line-height: 45px;
+                text-align: center;
+                float: right;
+                width: 130px;
+                color: #FFFFFF;
+                margin-left: 12px;
+                cursor: pointer;
+            }
+            >img{
+                position: absolute;
+                right: 10px;
+                height: 35px;
+                top: 2.5px;
+                display: block;
+            }
+            >span{
+                float: right;
+                height: 40px;
+                line-height: 40px;
+                color: #a45454;
+            }
+            >h5{
+                font-weight: 400;
+                float: right;
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                color: #0e0e0e;
+                margin-right: 15px;
+            }
+        }
+    }
+    >#reg{
+       width: 400px;
+       border: none;
+       height: 45px;
+       line-height: 45px;
+       text-align: center;
+       background-color: $main_color;
+       color: #FFFFFF;
+       cursor: pointer;
+       float: right;
+    }
+}

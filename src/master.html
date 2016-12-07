@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>琇雅-大师风采</title>
+		<link rel="stylesheet" type="text/css" href="modules/css/master.scss" />
+	</head>
+	<body>
+		<link rel="import" href="modules/html/header/header.html?__inline">
+  <article class="master-content">
+     <ul class="master-list ">
+        <li v-for="item in items.region">
+          <h2>{{item.title}}玉石雕刻大师</h2>
+          <ul>
+            <li v-for="ite in item.children">
+              <a href={{ite.href}}>
+                <figure>
+                  <img src={{ite.src}} alt="arcter" />
+                  <h5>{{ite.name}}</h5>
+                  <p>
+                    {{ite.sex}}&nbsp;{{ite.age}}年出生&nbsp;{{ite.area}}人
+                  </p>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </li>
+     </ul>
+  </article>
+  <link rel="import" href="modules/html/footer/footer.html?__inline">
+  	<script src="lib/js/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/js/vue/dist/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="modules/app/master.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0" name="viewport" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="address=no" name="format-detection" />
+		<title>琇雅-新闻列表</title>
+		<link rel="stylesheet" href="modules/css/news.scss">
+	</head>
+	<body>
+		<link rel="import" href="modules/html/header/header.html?__inline">
+		<figure>
+			<img src="img/news/news-header.png"/>
+		</figure>
+		<article class="clear">
+			<section class="left">
+				<h1></h1>
+				<ul>
+					<li><a href=""><i class="iconfont">&#xe608;</i>通知公告</a></li>
+					<li><a href=""><i class="iconfont">&#xe608;</i>培训动态</a></li>
+					<li><a href=""><i class="iconfont">&#xe608;</i>集团新闻</a></li>
+					<li><a href=""><i class="iconfont">&#xe608;</i>社会新闻</a></li>
+					<li><a href=""><i class="iconfont">&#xe608;</i>焦点新闻</a></li>
+				</ul>
+			</section>
+			<section class="right">
+				<ul>
+					<li v-for="item in newslist">
+						<h1>{{item.title}}</h1>
+						<p>发表时间 ：{{item.time}}<a href="#">了解更多</a></p>
+					</li>
+				</ul>
+			</section>
+		</article>
+		<link rel="import" href="modules/html/footer/footer.html?__inline">
+		<script src="lib/js/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="lib/js/vue/dist/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="modules/app/news.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

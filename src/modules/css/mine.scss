@@ -1,0 +1,178 @@
+@import "./config";
+
+body {
+  background-color: #f6f6f6;
+}
+
+.person-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+    > .person-left {
+        width: 240px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border: 1px solid #e1dcdc;
+        float: left;
+        //头像部分
+        > figure {
+            padding-top: 35px;
+            margin: 0 0 10px;
+
+            > img {
+                display: block;
+                height: 115px;
+                width: 115px;
+                box-sizing: border-box;
+                border: 1px solid #e6e5e5;
+                margin: 0 auto;
+            }
+
+            > h5 {
+                width: 100%;
+                color: $main_color;
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+            }
+
+            > span {
+                display: block;
+                color: $main_color;
+                text-align: center;
+                color: #292929;
+            }
+
+            button {
+                cursor: pointer;
+                width: 160px;
+                height: 20px;
+                display: block;
+                box-sizing: border-box;
+                border: 1px solid #e0e0e0;
+                background-color: #efefef;
+                color: #292929;
+                line-height: 20px;
+                margin: 20px auto 0;
+            }
+        }
+        //列表部分
+        > ul {
+            margin-top: 20px;
+
+            > .show {
+                height: auto;
+            }
+
+            > ul {
+                height: 0;
+                overflow: hidden;
+
+                > li {
+                    height: 40px;
+                    line-height: 40px;
+                    cursor: pointer;
+                    padding-left: 80px;
+
+                    &:hover {
+                        > a {
+                            color: $main_color;
+                        }
+                    }
+
+                    > a {
+                        color: #525252;
+                        text-decoration: none;
+                        font-size: 12px;
+                    }
+                }
+
+                > .select {
+                    > a {
+                        color: $main_color;
+                    }
+                }
+            }
+
+            > li {
+                > a {
+                  box-sizing: border-box;
+                    padding-left: 60px;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    color: #525252;
+                    text-decoration: none;
+                    transition: all 0.2s ease-in;
+
+                    > i {
+                        font-size: 16px;
+                        margin-right: 5px;
+                    }
+                }
+                // padding-left: 60px;
+                cursor: pointer;
+                height: 45px;
+                line-height: 45px;
+                font-size: 14px;
+                box-sizing: border-box;
+                transition: all 0.2s ease-in;
+
+                &:hover {
+                  background-color: $main_color;
+                    color: #FFFFFF;
+                }
+
+                &:hover a {
+                    color: #FFFFFF;
+                }
+            }
+
+            > .select {
+                // background-color: #7a0907;
+                color: #ffffff;
+                  background-color: $main_color;
+
+                > a {
+                    color: #FFFFFF;
+                }
+            }
+
+            > .myask {
+                border-top: 1px solid #efeeee;
+            }
+
+            > .mypurch {
+              padding-left: 58px;
+                > span {
+                    display: inline-block;
+                    height: 15px;
+                    width: 15px;
+                    text-align: center;
+                    line-height: 15px;
+                    margin-left: 5px;
+                }
+
+                > .show {
+                    transform: rotate(180deg);
+                }
+
+                > i {
+                    font-size: 19px;
+                    margin-right: 5px;
+                }
+            }
+
+            > .persondata {
+                border-top: 1px solid #efeeee;
+            }
+        }
+    }
+    // 右侧主体部分
+    > .person-right {
+        width: 900px;
+        float: right;
+    }
+}

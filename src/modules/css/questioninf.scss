@@ -1,0 +1,155 @@
+@import "./config";
+body{
+  background-color: #f6f6f6;
+}
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px  0;
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    figure{
+    	margin: 0;
+    }
+    //提问详情左侧列表部分
+    .leftList {
+        width: 890px;
+        float: left;
+        background-color: #FFFFFF;
+        box-sizing: border-box;
+        padding: 0 40px;
+        padding-bottom: 50px;
+        //我的提问主题干
+        .myAskListTitle {
+            >h1 {
+            	border-bottom: 1px solid #DDDDDD;
+            	line-height: 30px;
+            	padding: 17.5px 0;
+                color: #000000;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+        }
+        //我的提问和回答的列表
+        #myAskList {
+            >li {
+                border-bottom: 1px solid #DDDDDD;
+                padding: 0 0 20px;
+                margin-bottom: 15px;
+                //统一设置样式
+                >div {
+                    &:after {
+                        content: '';
+                        display: block;
+                        clear: both;
+                    }
+                    >figure {
+                        width: 45px;
+                        float: left;
+                        margin-right: 10px;
+                        img {
+                            border-radius: 50%;
+                            height: 45px;
+                            width: 45px;
+                            display: block;
+                            margin: 0 auto;
+                        }
+                        a {
+                          	text-align: center;
+                            width: 45px;
+                            overflow: hidden;
+                            white-space: pre;
+                            text-overflow: ellipsis;
+                            margin-top: 10px;
+                            display: block;
+                            color: #92a6a9;
+                            font-size: 12px;
+                        }
+                    }
+                    >div {
+                        float: left;
+                        width: calc(100% - 55px);
+                        >p {
+                            line-height: 25px;
+                            color: #504f4f;
+                            font-size: 14px;
+                        }
+                        >span {
+                            color: #CCCCCC;
+                            font-size: 12px;
+                            margin-top: 10px;
+                        }
+                        img{
+                          max-width: 100%;
+                        }
+                    }
+                }
+                >.question {
+                    >div {
+                        width: calc(100% - 55px);
+                    }
+                }
+                .answer {
+                    box-sizing: border-box;
+                    padding-left: 40px;
+                    padding-top: 15px;
+                }
+            }
+        }
+        .uritor {
+//          height: 250px;
+            #askAgain {
+                height: 35px;
+                padding: 0 15px;
+                color: #FFFFFF;
+                background-color: $main_color;
+                line-height: 35px;
+                text-align: center;
+                font-size: 14px;
+                margin-top: 10px;
+                border-radius: 2px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+    //提问详情右侧列表部分
+    .rightList {
+
+        width: 270px;
+        float: right;
+        >h1 {
+          background-color: $main_color;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+            color: #FFFFFF;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        ul {
+        	background-color: #FFFFFF;
+            li {
+            	cursor: pointer;
+            	text-indent: 10px;
+                width: 100%;
+                overflow: hidden;
+                white-space: pre;
+                text-overflow: ellipsis;
+                height: 45px;
+                line-height: 45px;
+                color: #494949;
+                font-size: 14px;
+                text-align: left;
+                border-bottom: 1px solid #ededed;
+                &:hover{
+                  background-color: $main_color;
+                	color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

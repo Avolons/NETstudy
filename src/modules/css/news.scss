@@ -1,0 +1,91 @@
+@import "./config";
+body {
+  background-color: #f6f6f6;
+ figure {
+    width: 100%;
+    margin: 0 0 35px;
+    background-color: #dbdfe2;
+    >img {
+        display: block;
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+}
+
+article {
+    width: 1200px;
+    margin: 0 auto;
+    >.left {
+        width: 250px;
+        float: left;
+        background-image: url("../../img/news/news-left.png");
+        >h1 {
+            height: 67px;
+            background-image: url("../../img/news/news-title.png");
+        }
+        >ul {
+            >li {
+                text-align: center;
+                height: 50px;
+                border-bottom: 1px solid #FFFFFF;
+                cursor: pointer;
+                &:hover {
+                    background-color: #dadada;
+                    >a {
+                        color: $main_color;
+                        >i {
+                            color: $main_color;
+                        }
+                    }
+                }
+                >a {
+                    line-height: 50px;
+                    font-size: 14px;
+                    color: #242323;
+                    >i {
+                        color: #cdcdcd;
+                        margin-left: -15px;
+                    }
+                }
+            }
+        }
+    }
+    >.right{
+        width: 920px;
+        box-sizing: border-box;
+        float: right;
+        background-color: #FFFFFF;
+        padding: 5px 40px;
+        padding-bottom: 0;
+        >ul{
+            min-height: 673px;
+            >li{
+                height: 70px;
+                border-bottom: 1px solid #e3e3e3;
+                margin-top: 20px;
+                >h1{
+                    color: #242323;
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+                >p{
+                    color: #888888;
+                    font-size: 12px;
+                    line-height: 30px;
+                    >a{
+                        float: right;
+                        cursor: pointer;
+                        color: #888888;
+                        &:hover{
+                            color: $main_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    margin-top: 100px;
+}

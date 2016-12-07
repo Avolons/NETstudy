@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>琇雅-订单详情</title>
+	<link rel="stylesheet" type="text/css" href="modules/css/purchase.scss" />
+	</head>
+	<body>
+		<link rel="import" href="modules/html/header/header.html?__inline">
+ 		<article>
+ 			<p></p>
+ 			<div class="outer">
+ 				<div class="top">
+ 				<img src="img/purchase/purchase_true.png"/>
+ 				<h2>订单提交成功，请您尽快支付。
+ 					<p>
+ 						订单编号：order20161010104711198372
+ 					</p>
+ 				</h2>
+ 				<h3>
+ 					支付金额：<span>￥600.00</span>
+ 				</h3>
+ 			</div>
+ 			<h4>选择支付平台</h4>
+ 			<ul class="select">
+ 				<li>
+ 					<span class="select"></span>
+ 					<p>
+ 						<img src="img/purchase/purchase_zhifubao.png"/>
+ 						支付宝
+ 					</p>
+ 				</li>
+ 				<li>
+ 					<span></span>
+ 					<p>
+ 						<img src="img/purchase/purchase_weixin.png"/>
+ 						支付宝
+ 					</p>
+ 				</li>
+ 			</ul>
+ 			<button type="button">
+ 				去支付
+ 			</button>
+ 			</div>
+ 		</article>
+  		<link rel="import" href="modules/html/footer/footer.html?__inline">
+  		<script src="lib/js/jquery/dist/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+  		<script type="text/javascript">
+  			$(".select span").click(function  () {
+  				$(".select span").removeClass("select");
+  				$(this).addClass("select");
+  			})
+  		</script>
+	</body>
+</html>

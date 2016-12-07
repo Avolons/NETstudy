@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>琇雅-证书查询</title>
+		<link rel="stylesheet" type="text/css" href="modules/css/query.scss" />
+		<link rel="stylesheet" type="text/css" href="lib/js/laypage/skin/laypage.css"/>
+	</head>
+
+	<body>
+		<link rel="import" href="modules/html/header/header.html?__inline">
+		<article>
+			<nav>
+				<span>姓名</span>
+				<input type="text" id="name" />
+				<span>身份证</span>
+				<input type="text" id="Idcard" />
+				<span>验证码</span>
+				<input type="text" id="card" />
+				<img src="dist/dist/img/master/master-bc.png" />
+				<button type="button">查询</button>
+			</nav>
+			<ul>
+				<section>
+					<span class="width-1">序号</span>
+					<span class="width-2">姓名</span>
+					<span class="width-3">身份证号</span>
+					<span class="width-4">获得证书</span>
+					<span class="width-5">获奖方式</span>
+					<span class="width-6">状态</span>
+					<span class="width-7">操作</span>
+				</section>
+				<li v-for="item in cerlist">
+					<span class="width-1">{{$index}}</span>
+					<span class="width-2">{{item.name}}</span>
+					<span class="width-3">{{item.idcode}}</span>
+					<span class="width-4">{{item.cer}}</span>
+					<span class="width-5">{{item.way}}</span>
+					<span class="width-6">{{item.type}}</span>
+					<span class="width-7"><button>查看</button></span>
+				</li>
+			</ul>
+			<section id="pagecontrol"></section>
+		</article>
+		<link rel="import" href="modules/html/footer/footer.html?__inline">
+		<script src="lib/js/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/js/laypage/laypage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/js/vue/dist/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="modules/app/query.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

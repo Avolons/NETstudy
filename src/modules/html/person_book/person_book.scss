@@ -1,0 +1,92 @@
+.person_book {
+    width: 100%;
+    .width-1 {
+        width: 37px;
+    }
+    .width-2 {
+        width: 175px;
+    }
+    .width-3 {
+        width: 166px;
+    }
+    .width-4 {
+        width: 162px;
+    }
+    .width-5 {
+        width: 142px;
+    }
+    .width-6 {
+        width: 170px;
+    }
+    >h1 {
+        height: 50px;
+        line-height: 50px;
+        box-sizing: border-box;
+        padding-left: 40px;
+        color: #313131;
+        font-size: 17px;
+        padding-right: 35px;
+        background-color: #FFFFFF;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    >.type-check {
+        box-sizing: border-box;
+        padding-left: 40px;
+        height: 50px;
+        background-color: #FFFFFF;
+        margin-bottom: 10px;
+        >li {
+            float: left;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 13px;
+            color: #424242;
+        }
+    }
+    >.cloud-list {
+        width: 100%;
+        >li {
+            background-color: #FFFFFF;
+            margin-bottom: 5px;
+            text-align: center;
+            >h5 {
+                text-align: left;
+                border-bottom: 1px solid #f2f1f1;
+                box-sizing: border-box;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 40px;
+                font-weight: 400;
+                font-size: 13px;
+                color: #363636;
+            }
+            >ul {
+                padding-left: 40px;
+                box-sizing: border-box;
+                background-color: #FFFFFF;;
+                >li {
+                    display: block;
+                    float: left;
+                    font-size: 12px;
+                    color: #5b5b5b;
+                    max-height: 80px;
+                    line-height: 30px;
+                    box-sizing: border-box;
+                    padding: 10px 0;
+                    overflow: hidden;
+                    >button{
+                        border: none;
+                        padding: 0 15px;
+                        background-color: transparent;
+                        cursor: pointer;
+                    }
+                }
+                .color{
+                    color: #0b60a2;
+                }
+            }
+        }
+    }
+}

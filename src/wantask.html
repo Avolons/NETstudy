@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+			}
+
+			#layer {
+				height: 430px;
+				width: 750px;
+				padding-top: 20px;
+			}
+
+			#layer>form {
+				margin: 0 auto;
+				width: 600px;
+			}
+
+			#layer>form>input {
+				outline: none;
+				padding-left: 10px;
+				background-color: #ffffff;
+				width: 100%;
+				margin: 0 0 5px 0;
+				color: #6b6b6b;
+				border: 1px solid #d4d4d4;
+				box-sizing: border-box;
+				height: 33px;
+				font-size: 14px;
+				display: block;
+			}
+
+			#layer>form>.content {
+				height: 260px;
+				width: 600px;
+			}
+
+			#layer>form>button {
+				display: block;
+				margin: 0 auto;
+				width: 100px;
+				height: 33px;
+				background-color: #0B60A2;
+				color: #FFFFFF;
+				font-size: 14px;
+				border: none;
+				margin-top: 10px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="layer">
+			<form>
+				<input type="text" id="asktext" placeholder="请输入提问标题"/>
+				<div class="content">
+
+				</div>
+				<button type="button">
+					提交
+				</button>
+			</form>
+		</div>
+		<script type="text/javascript">
+			document.getElementsByTagName("button")[0].addEventListener("click",function(){
+				parent.app.resetquest();
+				parent.layer.open({
+				  type: 0,
+				  content: '您已提交成功' ,//这里content是一个普通的String
+				  zIndex:19891016,
+				  closeBtn:0,
+				  yes: function(index, layero){
+				  	parent.layer.closeAll();
+				  }
+				});
+			})
+		</script>
+	</body>
+
+</html>

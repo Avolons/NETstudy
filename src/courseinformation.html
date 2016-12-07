@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>琇雅-课程详情</title>
+		<link rel="stylesheet" type="text/css" href="modules/css/courseinformation.scss" />
+		<link rel="stylesheet" type="text/css" href="lib/js/laypage/skin/laypage.css"/>
+	</head>
+	<body>
+		<link rel="import" href="modules/html/header/header.html?__inline">
+		<aside class="fixed">
+				<div class="inner clear">
+					<ul class="table">
+					<li v-bind:class="{'select':table.itr.show}" v-on:click="tablecheck(table.itr)">课程简介</li>
+					<li v-bind:class="{'select':table.list.show}" v-on:click="tablecheck(table.list)">课程目录</li>
+					<li v-bind:class="{'select':table.talk.show}" v-on:click="tablecheck(table.talk)">我的提问</li>
+					</ul>
+					<button type="button">立即报名</button>
+				</div>
+			</aside>
+		<article class="clear">
+			<!--浮动框-->
+
+			<!--主体头部-->
+			<section class="content-top clear">
+				<figure>
+					<img src="img/information/information-img.png"/>
+				</figure>
+				<aside>
+					<h1>指尖上的传承玉雕</h1>
+					<!-- <ul>
+						<li>学习人数：2000</li>
+						<li>学习时长：20</li>
+						<li>有效期：2016年8月4日</li>
+					</ul> -->
+					<h2>价      格：<span>￥200</span></h2>
+					<h3>报名时间：2016年8月4日-2016年8月1日</h3>
+					<h3>主讲教师：黄姣姣</h3>
+					<button class="type-no" type="button">立即报名</button>
+					<button type="button" v-on:click="proask()">我要提问</button>
+				</aside>
+			</section>
+			<!--主体左部-->
+			<section class="content-left">
+				<ul class="table">
+					<li v-bind:class="{'select':table.itr.show}" v-on:click="tablecheck(table.itr)">课程简介</li>
+					<li v-bind:class="{'select':table.list.show}" v-on:click="tablecheck(table.list)">课程目录</li>
+					<li v-bind:class="{'select':table.talk.show}" v-on:click="tablecheck(table.talk)">我的提问</li>
+				</ul>
+				<ul class="content">
+					<li class="courseitr" v-bind:class="{'select':table.itr.show}">
+						<h5>适用人群：专业玉雕从业者和玉雕爱好者</h5>
+						<!--课程信息-->
+						<div class="course-in">
+							<h6>课程信息</h6>
+							<ul class="clear">
+								<li class="overflow_pre">课程名称：陈列结构创意</li>
+								<li class="overflow_pre">主讲教师：黄姣姣</li>
+								<li class="overflow_pre">难易程度：初级</li>
+								<li class="overflow_pre">学习人数：4913人</li>
+								<li class="overflow_pre">总共章节：共10节</li>
+								<li class="overflow_pre">课程时长：420分钟</li>
+							</ul>
+						</div>
+						<!--课程简介-->
+						<div class="course-itr">
+							<h6>课程简介</h6>
+							<!--富文本-->
+							<pre>
+
+							</pre>
+						</div>
+						<!--资料下载-->
+						<div class="course-down">
+							<h6>资料下载</h6>
+							<ul>
+								<li>1、高品质沟通.png(（测试）公关礼仪概述) <span>下载</span></li>
+								<li>1、高品质沟通.png(（测试）公关礼仪概述) <span>下载</span></li>
+							</ul>
+						</div>
+						<!--教材列表-->
+						<div class="course-book">
+							<h6> 配套教材</h6>
+							<ul>
+								<li>1.陈列结构创意</li>
+								<li>1.陈列结构创意</li>
+							</ul>
+						</div>
+					</li>
+					<li class="courselist" v-bind:class="{'select':table.list.show}">
+						<ul>
+							<h5>目 录</h5>
+							<li v-for="item in courselist">
+								<ul>
+									<h6>第{{chinaword[$index]}}章        {{item.title}}</h6>
+									<li v-for="ite in item.children">
+									           课时{{$index+1}}        {{ite.title}}
+									  <time>{{ite.time}}</time>
+									  <i class="iconfont">&#xe600;</i>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="coursediscuss" v-bind:class="{'select':table.talk.show}">
+						<div class="tablechosse">
+							<span v-bind:class="{'select':table.talk.all.show}" v-on:click="tablechecklist(table.talk.all)">
+								显示全部
+							</span>
+							<span v-bind:class="{'select':table.talk.mine.show}" v-on:click="tablechecklist(table.talk.mine)">
+								查看我的
+							</span>
+						</div>
+						<ul v-bind:class="{'select':table.talk.all.show}">
+							<li v-for="item in questionList.all">
+								<div class="ask clear">
+									<figure>
+										<img src={{item.ask.imgsrc}}/>
+									</figure>
+									<aside>
+										<h2>{{item.ask.name}}</h2>
+										<h3 class="overflow_pre">{{item.ask.title}}</h3>
+										<h4>时间  ：{{item.ask.time}} &nbsp;&nbsp;&nbsp;回答 ： {{item.ask.number}}</h4>
+									</aside>
+									<button type="button">
+										查看详情
+									</button>
+								</div>
+								<template v-if="item.question">
+								<div class="question clear">
+									<figure>
+										<img src={{item.question.imgsrc}}/>
+										<span class="overflow_pre">{{item.question.name}}</span>
+									</figure>
+									<aside>
+										<h3>{{item.question.title}}
+										</h3>
+										<h4>时间  ：{{item.question.time}}</h4>
+									</aside>
+								</div>
+								</template>
+							</li>
+							<div id="talkpage">
+
+							</div>
+						  </ul>
+						  <ul v-bind:class="{'select':table.talk.mine.show}">
+							<li v-for="item in questionList.mine">
+								<div class="ask clear">
+									<figure>
+										<img src={{item.ask.imgsrc}}/>
+									</figure>
+									<aside>
+										<h2>{{item.ask.name}}</h2>
+										<h3 class="overflow_pre">{{item.ask.title}}</h3>
+										<h4>时间  ：{{item.ask.time}} &nbsp;&nbsp;&nbsp;回答 ： {{item.ask.number}}</h4>
+									</aside>
+									<button type="button">
+										查看详情
+									</button>
+								</div>
+								<template v-if="item.question">
+								<div class="question clear">
+									<figure>
+										<img src={{item.question.imgsrc}}/>
+										<span class="overflow_pre">{{item.question.name}}</span>
+									</figure>
+									<aside>
+										<h3>{{item.question.title}}
+										</h3>
+										<h4>时间  ：{{item.question.time}}</h4>
+									</aside>
+								</div>
+								</template>
+							</li>
+							<div id="mypage">
+
+							</div>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<!--主体右部-->
+			<section class="content-right">
+				<div class="teacher-itr">
+					<h6>资料下载</h6>
+					<figure>
+						<a href="#">
+							<img src="img/master/master-arcter.png"/>
+							<h3>主讲教师：李天赐</h3>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;2007年中国十大杰出讲师；巨思特教育集团董事局主
+								席；清华大学——中旭商学院高级讲师；北京企业管理
+								学院执行院长；前沿讲座特邀嘉宾；携训网特邀讲师；
+								中国经营报家顾问团高级顾问；清华大学国际化管理裁
+								高级研修班客座教授；中国国际华商联合会秘书长；《
+								中国工商》杂志社副主编。
+							</p>
+						</a>
+					</figure>
+				</div>
+				<div class="conect-course clear">
+					<h6>资料下载</h6>
+					<ul>
+						<img src="dist/img/coursecenter/course-lizi.png"/>
+						<li class="clear">web前端开发</li>
+						<li class="clear">优秀数据分析师</li>
+						<li class="clear">牛逼员工的十大心态</li>
+						<li class="clear">8090员工素养的提升</li>
+					</ul>
+					<span>
+						>>更多
+					</span>
+				</div>
+			</section>
+		</article>
+		<link rel="import" href="modules/html/footer/footer.html?__inline">
+		<script src="lib/js/jquery/dist/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/js/laypage\laypage.js" charset="utf-8"></script>
+		<script src="lib/js/layer/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/js/vue/dist/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="modules/app/information.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

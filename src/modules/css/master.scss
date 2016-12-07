@@ -1,0 +1,76 @@
+@import "./config";
+body{
+background-color: #f6f6f6;
+}
+.master-content{
+  background-color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  .master-list{
+    width: 100%;
+    margin-top: 20px;
+    >li{
+      display: block;
+      width: 100%;
+      >h2{
+        border-radius: 3px;
+        margin-left: 10px;
+        color: #ffffff;
+        display:inline-block;
+        background-color: $main_color;
+        background-size: cover;
+        padding: 0 10px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+      }
+      >ul{
+        font-size: 0px;
+        >li{
+          height: 320px;
+          width: 20%;
+          display: inline-block;
+          >a{
+            cursor: pointer;
+            display: block;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            >figure{
+              padding-top: 45px;
+              margin: 0;
+              >img{
+                box-sizing: border-box;
+                height: 190px;
+                width: 190px;
+                display: block;
+                border-radius: 50%;
+                margin: 0  auto;
+                margin-bottom: 20px;
+                transition: all 0.3s ease-in;
+                &:hover{
+                    transform: scale(1.1);
+                }
+              }
+              >h5{
+                font-weight: 400;
+                color: #161616;
+                font-size: 14px;
+                text-align: center;
+                transition: all 0.3s ease-in;
+              }
+              >p{
+                line-height: 30px;
+                color: #161616;
+                font-size: 14px;
+                text-align: center;
+                transition: all 0.3s ease-in;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

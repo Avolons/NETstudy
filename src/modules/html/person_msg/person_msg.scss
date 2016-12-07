@@ -1,0 +1,96 @@
+.person-msg{
+    width: 100%;
+    >h1{
+         height: 50px;
+         line-height: 50px;
+         color: #313131;
+         font-size: 17px;
+         background-color: #FFFFFF;
+         width: 100%;
+         padding-left: 37px;
+         box-sizing: border-box;
+         margin-bottom: 20px;
+    }
+    >ul{
+        background-color: #FFFFFF;
+        padding: 60px 270px 60px 0;
+        box-sizing: border-box;
+        >li{
+            width: 100%;
+            height: 40px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #9a9a9a;
+            >span{
+                float: right;
+                height: 40px;
+                line-height: 40px;
+                margin-right: 5px;
+            }
+            >i{
+                float: right;
+                height: 40px;
+                line-height: 40px;
+                font-style: normal;
+                margin-right: 3px;
+                display: block;
+                color: #de2424;
+            }
+            >input{
+                float: right;
+                height: 40px;
+                line-height: 40px;
+                box-sizing: border-box;
+                padding-left: 10px;
+                width: 290px;
+                outline-color: #0b60a2;
+            }
+            >#IDType{
+                margin-right: 220px;
+                width: 70px;
+                display: block;
+            }
+            >#HighestEdu{
+                margin-right: 220px;
+                width: 70px;
+                display: block;
+            }
+            >#Major{
+                margin-right: 220px;
+                width: 70px;
+                display: block;
+            }
+            >.sexchoose{
+                width: 290px;
+                box-sizing: border-box;
+                float: right;
+                margin-top: 10px;
+            }
+            #hidDomicile{
+                width: 290px;
+                float: right;
+               margin-top: 10px;
+                >select{
+                    width: 33%;
+                    float: left;
+                }
+            }
+            >select{
+                float: right;
+                margin-top: 10px;
+            }
+        }
+        >button{
+            width: 80px;
+            height: 35px;
+            background-color: #0b60a2;
+            line-height: 35px;
+            color: #FFFFFF;
+            cursor: pointer;
+            margin-left: 400px;
+            margin-top: 30px;
+            display: block;
+            border: none;
+        }
+    }
+}
