@@ -5,13 +5,13 @@ var app = new Vue({
             //table切换
             table: {
                 itr: {
-                    show: false
+                    show: true
                 },
                 list: {
                     show: false
                 },
                 talk: {
-                    show: true,
+                    show: false,
                     all: {
                         show: true
                     },
@@ -22,7 +22,8 @@ var app = new Vue({
             },
             //文章列表数据
             //章节目录自定义
-            chinaword: ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二', '十三', '十四', '十五', '十六', '十七', '十八', '十九', '二十'],
+            chinaword: ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一',
+             '十二', '十三', '十四', '十五', '十六', '十七', '十八', '十九', '二十'],
             courselist: [{
                     title: '指尖上的传承之玉雕',
                     children: [{
@@ -167,7 +168,7 @@ var app = new Vue({
                     }
                 },
 
-            ]
+            ];
         }
     },
     ready: function() {
@@ -178,29 +179,29 @@ var app = new Vue({
                 $(".fixed").hide();
             }
         });
-				laypage({
-		      cont: 'talkpage', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
-		      pages: 10, //通过后台拿到的总页数
-		      curr:  1, //当前页
-		      skin: '#0b60a2',
-	          groups: 3 ,//连续显示分页数
-		      jump: function(obj, first){ //触发分页后的回调
-		        if(!first){ //点击跳页触发函数自身，并传递当前页：obj.curr
-	//	          demo(obj.curr);
-		        }
-		      }
-		    });
-				laypage({
-					cont: 'mypage', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
-					pages: 10, //通过后台拿到的总页数
-					curr:  1, //当前页
-					skin: '#0b60a2',
-						groups: 3 ,//连续显示分页数
-					jump: function(obj, first){ //触发分页后的回调
-						if(!first){ //点击跳页触发函数自身，并传递当前页：obj.curr
-	//	          demo(obj.curr);
-						}
-					}
-				});
+        laypage({
+            cont: 'talkpage', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+            pages: 10, //通过后台拿到的总页数
+            curr: 1, //当前页
+            skin: '#e50112',
+            groups: 3, //连续显示分页数
+            jump: function(obj, first) { //触发分页后的回调
+                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                    //	          demo(obj.curr);
+                }
+            }
+        });
+        laypage({
+            cont: 'mypage', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+            pages: 10, //通过后台拿到的总页数
+            curr: 1, //当前页
+            skin: '#e50112',
+            groups: 3, //连续显示分页数
+            jump: function(obj, first) { //触发分页后的回调
+                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                    //	          demo(obj.curr);
+                }
+            }
+        });
     }
-})
+});

@@ -11,9 +11,10 @@ article{
 	padding-top: 75px;
 	box-sizing: border-box;
 	>p{
-      border-top: 3px solid $main_color;
+    border-top: 2px solid $main_color;
+      border-bottom: 2px solid $main_color;
 		margin: 0 auto;
-		height: 13px;
+		height: 8px;
 		width: 1040px;
 		margin-bottom: 40px;
 	}

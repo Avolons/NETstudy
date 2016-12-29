@@ -11,35 +11,53 @@
 	<body>
 		<link rel="import" href="modules/html/header/header.html?__inline">
 		<nav class="nav-list">
-			<ul class="label-list">
-				<!--父级目录携带统计目录-->
-				<!--判断当前是否是初始化状态，初始化状态只包含“全部”，使用和其他状态不一样的样式，添加函数nav_top,传入下标用做参数-->
-				<li v-for="item in nav_top" v-bind:class="{'noAll':item.title!='全部'}" v-on:click="nav_top($index)">
-					<i class="icon-right">></i>
-					{{item.title}}
-					<!--判断如果和初级目录数组对象下标一致的同级目录没有数据，则说明当前为初始化页面，只显示初级目录包含“全部”，无下级目录，下级目录不渲染-->
-					<template v-if="nav_same[$index]">
-					<ul class="type-one clear">
-						<span>分类:</span>
-						<!--初级目录和同级目录的对象结构一一对应，下标相等，使用同一下标遍历数组，当当前li的titl和初级目录的title值相等时，显示class select，表示当前为被选中li，绑定函数nav_same，使用下标index为参数-->
-						<li v-for="ite in nav_same[$index]" v-on:click="nav_same($index)" v-bind:class="{'select':ite.title==nav_top[$index].title}">{{ite.title}}</li>
-					</ul>
-					</template>
-				</li>
+			<ul class="label-list clear">
+					<span>全部课程：</span>
+					<li class="select">全部</li>
+					<li>财务管理</li>
+					<li>个人发展规划</li>
+					<li>领导艺术</li>
+					<li>情绪管理专家</li>
+					<li>商务礼仪</li>
+					<li>人力资源</li>
 			</ul>
-			<!--子集目录-->
-			<template v-if="nav_childrens[0]">
-			<ul class="type-two clear">
-				<span>课程</span>
-				<!--子集目录当title值为“全部”时，绑定class select，显示被点击的样式，使用nav_childrens函数将当前li的下标index值传入函数，用以在数据对象中查找-->
-				<li v-for="item in nav_childrens" v-bind:class="{'select':item.title=='全部'}" v-on:click="nav_childrens($index)">{{item.title}}</li>
+			<ul class="type-two clear"  v-bind:class="{'openselect':more.close}">
+				<span>分类：</span>
+				<button class="open" v-show="more.open"  v-on:click="openmore()">更多∨</button>
+				<button class="close" v-show="more.close"  v-on:click="openmore()">收起∧</button>
+				<li class="select">全部</li>
+				<li>采购管理与实施</li>
+				<li>财务管理</li>
+				<li>个人发展规划</li>
+				<li>领导艺术</li>
+				<li>情绪管理专家</li>
+				<li>商务礼仪</li>
+				<li>人力资源</li>
+				<li>自我情绪</li>
+				<li>成本管理与控制 </li>
+				<li>目标结果</li>
+				<li>人力资本</li>
+				<li>礼仪作用</li>
+				<li>财务管理</li>
+				<li>个人发展规划</li>
+				<li>领导艺术</li>
+				<li>情绪管理专家</li>
+				<li>商务礼仪</li>
+				<li>人力资源</li>
+				<li>自我情绪</li>
+				<li>成本管理与控制 </li>
+				<li>目标结果</li>
+				<li>人力资本</li>
+				<li>礼仪作用</li>
+				<li>情绪管理专家</li>
+				<li>商务礼仪</li>
+				<li>人力资源</li>
+				<li>自我情绪</li>
+				<li>成本管理与控制 </li>
+				<li>目标结果</li>
+				<li>人力资本</li>
+				<li>礼仪作用</li>
 			</ul>
-			<ul class="type-two clear" style="margin-top:10px;">
-				<span>题材</span>
-				<!--子集目录当title值为“全部”时，绑定class select，显示被点击的样式，使用nav_childrens函数将当前li的下标index值传入函数，用以在数据对象中查找-->
-				<li v-for="item in nav_ticai" v-bind:class="{'select':item.title=='全部'}" v-on:click="">{{item.title}}</li>
-			</ul>
-			</template>
 			<ul class="type-three clear">
 				<!--绑定课程属性函数type_change，切换全部，即将开始等-->
 				<li v-for="item in type_select" v-bind:class="{'select':item.select}" v-on:click="type_change(item)">{{item.title}}</li>
@@ -60,7 +78,7 @@
 					<!--绑定函数courseClick,将数据对象整体传入-->
 					<li v-for="item in courselist" v-on:click="courseClick(item)">
 						<figure>
-							<img src={{item.imgsrc}} alt="course" />
+							<img v-bind:src="item.imgsrc"alt="course" />
 							<h5>{{item.title}}</h5>
 							<ul>
 								<li>￥{{item.studypeople}}</li>

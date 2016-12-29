@@ -118,6 +118,8 @@ article{
            }
            >h2{
                height: 70px;
+               width: 655px;
+               background-color: #f3f3f3;
                line-height: 70px;
                color: #3a3a3a;
                font-size: 14px;
@@ -194,7 +196,7 @@ article{
                     font-weight: 400;
                     height: 60px;
                     line-height: 60px;
-                    background-color: #ededed;
+                    background-color: #fdf2f3;
                     color: #736e6e;
                     font-size: 14px;
                     text-indent: 20px;
@@ -217,11 +219,11 @@ article{
                         color: #ffffff;
                         width: 125px;
                         height: 35px;
-                        text-align: center;
+                        text-align: left;
                         line-height: 35px;
                         background-repeat: no-repeat;
                         margin-bottom: 10px;
-                        background-color: $main_color;
+                        color: $main_color;
                     }
                     >pre{
                       padding: 0 20px;
@@ -241,14 +243,21 @@ article{
                     li{
                         >span{
                             float: right;
-                            padding: 0 10px;
+                            padding: 0 15px;
                             color: #FFFFFF;
                             height: 20px;
                             margin-top: 10px;
                             line-height: 20px;
-                            background-color: $main_color;
-                            border-radius: 3px;
+                            border:1px solid #999999;
+                            color: #999999;
+                            font-size: 14px;
                             cursor: pointer;
+                            transition: all 0.2s ease-in;
+                            &:hover{
+                              border-radius: 5px;
+                              color: $main_color;
+                              border-color: $main_color;
+                            }
                         }
                     }
                 }
@@ -274,7 +283,7 @@ article{
                              >h6{
                                  height: 30px;
                                  line-height: 30px;
-                                 background-color: #ededed;
+                                 background-color: #fdf2f3;
                                  font-size: 14px;
                                  color: #6d6d6d;
                                  font-weight: 400;
@@ -289,7 +298,7 @@ article{
                                  box-sizing: border-box;
                                  padding:0 30px;
                                  cursor: pointer;
-                                 transition: all 0.2s ease-in;
+                                //  transition: all 0.2s ease-in;
                                  &:hover{
                                      background-color: #DADADA;
                                  }
@@ -460,11 +469,11 @@ article{
                color: #FFFFFF;
                 width: 125px;
                 height: 35px;
-                text-align: center;
+                text-align: left;
                 line-height: 35px;
                 background-repeat: no-repeat;
                 margin-bottom: 10px;
-                background-color: $main_color;
+                color:#2b2a2a;
            }
        }
        >.teacher-itr{

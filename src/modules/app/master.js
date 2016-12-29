@@ -9,7 +9,7 @@ new Vue({
             title:"河南",
             children:[
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -17,7 +17,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -25,7 +25,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -33,7 +33,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -41,7 +41,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -49,7 +49,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -57,7 +57,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -65,76 +65,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
-                href:'http://localhost:3000/views/masterInf/informatin.html',
-                name:'王俊毅',
-                sex:'男',
-                age:'1975',
-                area:'桂林'
-              },
-            ]
-          },
-          {
-            title:"河南",
-            children:[
-              {
-                src:"img/master/master-arcter.png",
-                href:'http://localhost:3000/views/masterInf/informatin.html',
-                name:'王俊毅',
-                sex:'男',
-                age:'1975',
-                area:'桂林'
-              },
-              {
-                src:"img/master/master-arcter.png",
-                href:'http://localhost:3000/views/masterInf/informatin.html',
-                name:'王俊毅',
-                sex:'男',
-                age:'1975',
-                area:'桂林'
-              },
-              {
-                src:"img/master/master-arcter.png",
-                href:'http://localhost:3000/views/masterInf/informatin.html',
-                name:'王俊毅',
-                sex:'男',
-                age:'1975',
-                area:'桂林'
-              },
-              {
-                src:"img/master/master-arcter.png",
-                href:'http://localhost:3000/views/masterInf/informatin.html',
-                name:'王俊毅',
-                sex:'男',
-                age:'1975',
-                area:'桂林'
-              },
-              {
-                src:"img/master/master-arcter.png",
-                href:'http://localhost:3000/views/masterInf/informatin.html',
-                name:'王俊毅',
-                sex:'男',
-                age:'1975',
-                area:'桂林'
-              },
-              {
-                src:"img/master/master-arcter.png",
-                href:'http://localhost:3000/views/masterInf/informatin.html',
-                name:'王俊毅',
-                sex:'男',
-                age:'1975',
-                area:'桂林'
-              },
-              {
-                src:"img/master/master-arcter.png",
-                href:'http://localhost:3000/views/masterInf/informatin.html',
-                name:'王俊毅',
-                sex:'男',
-                age:'1975',
-                area:'桂林'
-              },
-              {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -147,7 +78,7 @@ new Vue({
             title:"河南",
             children:[
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -155,7 +86,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -163,7 +94,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -171,7 +102,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -179,7 +110,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -187,7 +118,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -195,7 +126,7 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',
@@ -203,7 +134,76 @@ new Vue({
                 area:'桂林'
               },
               {
-                src:"img/master/master-arcter.png",
+                src:"/Src/mohrss/img/master/master-arcter.png",
+                href:'http://localhost:3000/views/masterInf/informatin.html',
+                name:'王俊毅',
+                sex:'男',
+                age:'1975',
+                area:'桂林'
+              },
+            ]
+          },
+          {
+            title:"河南",
+            children:[
+              {
+                src:"/Src/mohrss/img/master/master-arcter.png",
+                href:'http://localhost:3000/views/masterInf/informatin.html',
+                name:'王俊毅',
+                sex:'男',
+                age:'1975',
+                area:'桂林'
+              },
+              {
+                src:"/Src/mohrss/img/master/master-arcter.png",
+                href:'http://localhost:3000/views/masterInf/informatin.html',
+                name:'王俊毅',
+                sex:'男',
+                age:'1975',
+                area:'桂林'
+              },
+              {
+                src:"/Src/mohrss/img/master/master-arcter.png",
+                href:'http://localhost:3000/views/masterInf/informatin.html',
+                name:'王俊毅',
+                sex:'男',
+                age:'1975',
+                area:'桂林'
+              },
+              {
+                src:"/Src/mohrss/img/master/master-arcter.png",
+                href:'http://localhost:3000/views/masterInf/informatin.html',
+                name:'王俊毅',
+                sex:'男',
+                age:'1975',
+                area:'桂林'
+              },
+              {
+                src:"/Src/mohrss/img/master/master-arcter.png",
+                href:'http://localhost:3000/views/masterInf/informatin.html',
+                name:'王俊毅',
+                sex:'男',
+                age:'1975',
+                area:'桂林'
+              },
+              {
+                src:"/Src/mohrss/img/master/master-arcter.png",
+                href:'http://localhost:3000/views/masterInf/informatin.html',
+                name:'王俊毅',
+                sex:'男',
+                age:'1975',
+                area:'桂林'
+              },
+              {
+                src:"/Src/mohrss/img/master/master-arcter.png",
+                href:'http://localhost:3000/views/masterInf/informatin.html',
+                name:'王俊毅',
+                sex:'男',
+                age:'1975',
+                area:'桂林'
+              },
+              {
+                src:"/Src/mohrss/img/master/master-arcter.png",
                 href:'http://localhost:3000/views/masterInf/informatin.html',
                 name:'王俊毅',
                 sex:'男',

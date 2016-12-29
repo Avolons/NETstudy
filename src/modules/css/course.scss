@@ -1,176 +1,127 @@
 @import "./config";
 body {
-  background-color: #f6f6f6;
+  background-color: #ffffff;
 }
 .nav-list {
     width: 1200px;
     margin: 0 auto;
     position: relative;
-    z-index: 30;
     margin-top: 20px;
     >.label-list {
-        height: 25px;
-        line-height: 50px;
-        font-size: 0;
         position: relative;
-        >.noAll{
-            padding-left: 0;
-            &:after{
-                display: block;
-                content: "";
-                float: left;
-                height: 20px;
-                width: 20px;
-                text-align: center;
-                line-height: 20px;
-                margin-top: 5px;
-                transform :translateX(-30px);
-            }
-            &:hover {
-                height: 28px;
-                border: 1px solid $main_color;
-                border-bottom: none;
-            }
-            &:hover .icon-right {
-                transform: rotate(90deg);
-            }
-            &:hover .type-one {
-                display: block;
-                z-index: -1;
-            }
+        padding: 20px 0 10px 140px;
+        background-color: #f7f7f7;
+        border: 1px solid #ececec;
+        border-left: none;
+        border-right: none;
+        min-height: 25px;
+        >span{
+          display: block;
+          position: absolute;
+          font-size: 14px;
+          width: 140px;
+          left: 0;
+          top: 25px;
+          text-align: center;
+          color: #000000;
+          height: 25px;
+          line-height: 25px;
         }
-        >.noFirst{
-            &:after{
-                display: block;
-                content: ">";
-                float: left;
-                height: 20px;
-                width: 20px;
-                text-align: center;
-                line-height: 20px;
-                margin-top: 3px;
-                transform :translateX(-30px);
-            }
+        >.select{
+           background-color: $main_color;
+           color: #FFFFFF;
         }
-        >li {
-            height: 25px;
-            color: #1e1e1e;
-            font-size: 12px;
-            padding: 0 13px 0 23px;
-            box-sizing: border-box;
-            border: 1px solid #D2D2D2;
-            display: inline-block;
-            background-color: #ffffff;
-            cursor: pointer;
-            line-height: 25px;
-            z-index: 2;
-            margin-right: 35px;
-            .icon-right {
-                font-style: normal;
-                transition: all 0.1s ease-in;
-                display: block;
-                float: right;
-                height: 20px;
-                width: 20px;
-                text-align: center;
-                line-height: 20px;
-                margin-top: 1px;
-            }
-            >.type-one {
-                display: none;
-                box-sizing: border-box;
-                width: 1200px;
-                position: absolute;
-                background-color: #ffffff;
-                left: 0;
-                top: 34px;
-                padding-top: 10px;
-                padding-left: 70px;
-                z-index: -999;
-                border: 1px solid $main_color;
-                >span {
-                    float: left;
-                    display: block;
-                    margin-left: -70px;
-                    width: 70px;
-                    text-align: center;
-                    height: 20px;
-                    line-height: 20px;
-                    color: #515151;
-                    font-size: 14px;
-                }
-                >li {
-                    padding: 0 5px;
-                    height: 20px;
-                    line-height: 20px;
-                    color: #1c1c1c;
-                    font-size: 12px;
-                    float: left;
-                    margin-right: 50px;
-                    margin-bottom: 10px;
-                    cursor: pointer;
-                    transition: all 0.2s ease-in;
-                    &:hover {
-                        background-color: $main_color;
-                        color: #FFFFFF;
-                    }
-                }
-                >.select{
-                    background-color: $main_color;
-                    color: #FFFFFF;
-                }
-            }
+        >li{
+          display: inline-block;
+          float: left;
+          margin-bottom: 10px;
+          margin-right: 40px;
+          padding: 0 5px;
+          cursor: pointer;
+          font-size: 14px;
+          color: #2e2e2e;
+          height: 25px;
+          line-height: 25px;
+          transition: all 0.2s ease-in;
+          &:hover{
+            color: #ffffff;
+            background-color: $main_color;
+          }
         }
     }
+
     >.type-two {
         background-color: #ffffff;
-        box-sizing: border-box;
-        margin-top: 20px;
         position: relative;
-        z-index: -3;
-        padding: 5px 0 5px 100px;
-        border: 1px solid #dadada;
+        padding: 20px 60px 10px 140px;
+        min-height: 25px;
+        max-height: 100px;
+        overflow: hidden;
         >span {
-            float: left;
-            display: block;
-            margin-left: -100px;
-            width: 120px;
-            box-sizing: border-box;
-            padding-left: 23px;
-            height: 20px;
-            line-height: 20px;
-            color: #515151;
-            font-size: 14px;
+          display: block;
+          position: absolute;
+          font-size: 14px;
+          width: 140px;
+          left: 0;
+          top: 20px;
+          text-align: center;
+          color: #000000;
+          height: 25px;
+          line-height: 25px;
         }
-        >li {
-            padding: 0 5px;
-            height: 20px;
-            line-height: 20px;
-            color: #1c1c1c;
-            font-size: 12px;
-            float: left;
-            margin-right: 50px;
-            cursor: pointer;
-            transition: all 0.2s ease-in;
-            &:hover {
-                background-color: $main_color;
-                color: #FFFFFF;
-            }
+        >button{
+          position: absolute;
+          top: 20px;
+          right: 0;
+          height: 25px;
+          line-height: 23px;
+          box-sizing: border-box;
+          width: 60px;
+          text-align: center;
+          font-size: 12px;
+          color: #2e2e2e;
+          cursor: pointer;
+          border: 1px solid #d3d3d3;
+          background-color: #ffffff;
+          transition: all 0.2s ease-in;
+          &:hover{
+            border-color: $main_color;
+            color: $main_color;
+          }
+        }
+        >li{
+          display: inline-block;
+          float: left;
+          margin-right: 40px;
+          margin-bottom: 10px;
+          padding: 0 5px;
+          cursor: pointer;
+          font-size: 14px;
+          color: #2e2e2e;
+          height: 25px;
+          line-height: 25px;
+          transition: all 0.2s ease-in;
+          &:hover{
+            color: #ffffff;
+            background-color: $main_color;
+          }
         }
         >.select{
            background-color: $main_color;
            color: #FFFFFF;
         }
     }
+    >.openselect{
+      max-height: 999px;
+    }
     >.type-three {
-    width: 1200px;
-    margin: 0 auto;
-        margin-top: 10px;
+        width: 1200px;
+        margin: 0 auto;
         height: 40px;
         line-height: 40px;
-        background-color: #e0e0e0;
+        background-color: #f7f7f7;
         position: relative;
-        z-index: -3;
+        border-top: 1px solid #c5c5c5;
         >li{
             width: 100px;
             text-align: center;

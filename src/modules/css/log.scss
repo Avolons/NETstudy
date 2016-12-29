@@ -18,7 +18,7 @@ article{
     min-width: 1200px;
     height: 480px;
     position: relative;
-    padding-top: 30px;
+    padding-top: 65px;
     box-sizing: border-box;
     background-image: url(../../img/log/log-bc-bottom.png);
     >figure{
@@ -26,20 +26,22 @@ article{
         margin: 0 auto;
         height: 410px;
         >img{
-            width: 700px;
+            width: 540px;
             display: block;
             float: left;
+            margin-top: 30px;
+            margin-left: 75px;
         }
         >.logouter{
             height: 350px;
             width: 413px;
             float: right;
             margin-right: 80px;
-            margin-top: 23px;
             background-color: #FFFFFF;
             padding: 0 50px;
             box-sizing: border-box;
             position: relative;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
             >h1{
                 height: 80px;
                 width: 100%;
@@ -153,6 +155,7 @@ footer{
   padding-top: 30px;
   >p{
     text-align: center;
+    line-height: 35px;
     color: #545454;
     margin: 0 auto;
     font-size: 14px;

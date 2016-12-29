@@ -17,20 +17,6 @@ header {
             color: #212121;
             >ul {
                 height: 100%;
-                >li:nth-of-type(1){
-                	padding: 0;
-                	padding-top: 9px;
-                  box-sizing: border-box;
-                	&:after{
-                		display: none;
-                	}
-                	>a{
-                		display: block;
-                		>img{
-                			display: block;
-                		}
-                	}
-                }
                 >li {
                     box-sizing: border-box;
                     position: relative;
@@ -58,6 +44,20 @@ header {
                 }
                 //关于我们
                 >.focusus {
+                  position: relative;
+                  &:hover{
+                    >span{
+                      display: block;
+                    }
+                  }
+                    >span{
+                      position: absolute;
+                      left: 0;
+                      top: 35px;
+                      z-index: 999;
+                      box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+                      display: none;
+                    }
                     >img {
                         margin-left: 7px;
                         cursor: pointer;
@@ -67,7 +67,22 @@ header {
                     }
                 }
                 // app下载
-                >.appdownload {}
+                >.appdownload {
+                  position: relative;
+                  &:hover{
+                    >img{
+                      display: block;
+                    }
+                  }
+                  >img{
+                    position: absolute;
+                    top: 35px;
+                    z-index: 999;
+                    left: -95px;
+                    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+                    display: none;
+                  }
+                }
                 // 联系我们
                 .contactus {}
                 // 消息
@@ -201,8 +216,9 @@ header {
         height: 120px;
         background-repeat: no-repeat;
         >img {
-            height: 100%;
+            width: 261px;
             display: block;
+            margin-top: 30px;
             float: left;
         }
         >input {
@@ -253,7 +269,7 @@ header {
                     width: 100%;
                     color: #FFFFFF;
                     font-size: 16px;
-                    background-color: #094a7c;
+                    background-color: #d50211;
                 }
                 >ul {
                     height: 530px;
@@ -261,7 +277,7 @@ header {
                     position: absolute;
                     top: 45px;
                     left: 0;
-                    background-color: #0d6eb9;
+                    background-color: rgba(0,0,0,0.3);
                     z-index: 999;
                     box-sizing: border-box;
                     >li {
@@ -299,6 +315,7 @@ header {
                         >div {
                             border-bottom: 1px solid #ffffff;
                             padding-bottom: 26px;
+
                             >a {
                                 color: #FFFFFF;
                                 font-size: 14px;
@@ -341,22 +358,23 @@ header {
                             }
                         }
                         >.index1 {
-                            background-image: url("../../img/index/1.png");
+                            background: url("../../img/index/1.png") no-repeat bottom right;
                         }
                         >.index2 {
-                            background-image: url("../../img/index/1.png");
+                            background: url("../../img/index/1.png") no-repeat bottom right;
                         }
                         >.index3 {
-                            background-image: url("../../img/index/1.png");
+                            background: url("../../img/index/1.png") no-repeat bottom right;
                         }
                         >.index4 {
-                            background-image: url("../../img/index/1.png");
+                            background: url("../../img/index/1.png") no-repeat bottom right;
                         }
                         >.index5 {
-                            background-image: url("../../img/index/1.png");
+                            background: url("../../img/index/1.png") no-repeat bottom right;
                         }
                         //导航栏右侧区域
                         >aside {
+                            background-color: #ffffff;
                             display: none;
                             position: absolute;
                             top: 0;
@@ -480,7 +498,7 @@ header {
                         width: 1px;
                         float: right;
                         height: 30px;
-                        background-color: #ffffff;
+                        background-color: #ff303f;
                         margin-top: 7.5px;
                     }
                     &:after {
@@ -489,7 +507,7 @@ header {
                         width: 1px;
                         float: right;
                         height: 30px;
-                        background-color: #084F86;
+                        background-color: #b40613;
                         margin-top: 7.5px;
                     }
                 }
@@ -509,27 +527,27 @@ article {
     // background-image: url("../../img/common/content-bc.png");
     >.Slider {
         height: 530px;
-        width:  1200px;
-        margin: 0 auto;
         box-sizing: border-box;
-        padding-left: 305px;
         background-color: #ffffff;
         >div{
         	>ul{
         		>li{
+              position: relative;
+              overflow: hidden;
         			>img{
         				display: block;
+                // margin: 0 auto;
         				height: 100%;
-        				width: 100%;
+                position: absolute;
+                left: 50%;
+                transform:translateX(-50%);
         			}
         		}
         	}
         }
     }
+    // 热门课程
     >.hot-course {
-        // height: 750px;
-        // background-image: url("../../img/index/index-coursebc.png");
-        background-color: #f6f6f6;
         >.list {
             width: 1200px;
             margin: 0 auto;
@@ -545,8 +563,44 @@ article {
                     cursor: pointer;
                     background-color: #FFFFFF;
                     float: left;
+                    position: relative;
+                    &:after{
+                      transition: all 0.2s ease-in;
+                      position: absolute;
+                      display: block;
+                      content: "我要学习";
+                      color: #ffffff;
+                      font-size: 14px;
+                      width: 80px;
+                      height: 30px;
+                      line-height: 30px;
+                      text-align: center;
+                      background-color: #e50112;
+                      z-index: 55;
+                      top: 70px;
+                      left: 100px;
+                      opacity: 0;
+                    }
+                    &:before{
+                      transition: all 0.2s ease-in;
+                      position: absolute;
+                      display: block;
+                      content: "";
+                      z-index: 33;
+                      width: 290px;
+                      height: 100%;
+                      top: 0;
+                      left: 0;
+                      background-color: rgba(0,0,0,0.5);
+                      opacity: 0;
+                    }
                     &:hover {
-                        box-shadow: -2px 4px 7px 0 rgba(0,0,0,0.3);
+                        &:after{
+                          opacity: 1
+                        }
+                        &:before{
+                          opacity: 1
+                        }
                     }
                     >figure {
                         width: 100%;
@@ -561,7 +615,7 @@ article {
                         >.itr {
                             float: right;
                             box-sizing: border-box;
-                            border: 1px solid #dbcfbf;
+                            background-color: #e4e9ed;
                             border-left: none;
                             padding: 0 20px;
                             width: 285px;
@@ -724,7 +778,7 @@ article {
                         background-color: $main_color;
                     }
                     &:hover .left .bottom {
-                        color: $main_color;
+                        border-color: $main_color;
                     }
                     &:hover .right>h5 {
                         color: $main_color;
@@ -745,13 +799,15 @@ article {
                         }
                         >.top {
                             float: left;
-                            background-color: #a9a8a0;
+                            background-color: #e1e1e1;
                             color: #FFFFFF;
                         }
                         >.bottom {
                             float: left;
                             background-color: #FFFFFF;
                             color: #4b4b4b;
+                            border: 1px solid #e1e1e1;
+                            box-sizing: border-box;
                         }
                     }
                     >.right {
@@ -798,7 +854,7 @@ article {
             }
             >.one {
                 margin-top: 12px;
-                text-indent: 20px;
+                text-indent: 10px;
                 line-height: 53px;
                 float: left;
                 width: 190px;
@@ -808,25 +864,29 @@ article {
                 &:before{
                   display: block;
                   content: "";
-                  background-color: $main_color;
                   float: left;
-                  width: 5px;
-                  height: 25px;
-                  margin-top: 15px
+                  width: 29px;
+                  height: 44px;
+                  background-image: url(../../img/index/btn-left.png);
+                  margin-top: 8px
                 }
             }
             >.more {
-                margin-top: 17px;
-                text-indent: 73px;
-                line-height: 42px;
+                margin-top: 27px;
                 float: right;
                 font-size: 14px;
-                width: 150px;
-                height: 40px;
-                color: #737373;
-                // background-image: url("../../img/index/index-more.png");
+                width: 85px;
+                height: 30px;
+                line-height: 26px;
+                text-align: center;
+                color: #3b3b3b;
+                font-size: 16px;
+                box-sizing: border-box;
+                border: 2px solid #a5a5a5;
+                transition: all 0.2s ease-in;
                 &:hover {
                     color: $main_color;
+                    border-color: $main_color;
                 }
             }
         }

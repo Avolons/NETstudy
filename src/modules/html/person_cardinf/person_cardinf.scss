@@ -77,14 +77,13 @@
 				height: 45px;
 				line-height: 45px;
 				font-size: 14px;
-				color: #0b60a2;
-				border-bottom: 1px solid #d4d4d4;
-				margin-bottom: 25px;
+				color: #222222;
 				>span {
 					display: inline-block;
 					height: 13px;
-					width: 25px;
-					background-image: url("../../../img/common/cardinf.png");
+					width: 13px;
+					background-color: #e5282c;
+					margin-right: 5px;
 				}
 			}
 			>li {
@@ -119,6 +118,6 @@
 			display: block;
 			margin: 30px auto;
 			cursor: pointer;
-			background-color: #0b60a2;
+			background-color: #e5282c;
 		}
 }
